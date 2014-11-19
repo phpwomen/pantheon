@@ -4,3 +4,9 @@
 [submodule "wp-content/plugins/wordpress-webmention-for-comments"]
 	path = wp-content/plugins/wordpress-webmention-for-comments
 	url = https://github.com/pfefferle/wordpress-webmention-for-comments.git
+[submodule "wp-content/plugins/wordpress-webmention"]
+	path = wp-content/plugins/wordpress-webmention
+	url = https://github.com/pfefferle/wordpress-webmention.git
+[submodule "wp-content/plugins/wordpress-semantic-linkbacks"]
+	path = wp-content/plugins/wordpress-semantic-linkbacks
+	url = https://github.com/pfefferle/wordpress-semantic-linkbacks.git
