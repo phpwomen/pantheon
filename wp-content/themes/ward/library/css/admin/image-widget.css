@@ -1,0 +1,9 @@
+.custom-image-container {
+	display: block;
+	line-height: 0;
+	margin: 5px 0;
+}
+
+.custom-image-container img {
+	max-width: 100%;
+}

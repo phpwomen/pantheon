@@ -135,15 +135,12 @@ if ( ! class_exists( 'TC_customize' ) ) :
 				}
 			}
 
-
 			//remove sections
 			if ( isset( $setup['remove_section'])) {
 				foreach ( $setup['remove_section'] as $section) {
 					$wp_customize	-> remove_section( $section);
 				}
 			}
-
-
 
 			//add sections
 			if ( isset( $setup['add_section'])) {
@@ -160,15 +157,12 @@ if ( ! class_exists( 'TC_customize' ) ) :
 				}//end foreach
 			}//end if
 
-
 			//get_settings
 			if ( isset( $setup['get_setting'])) {
 				foreach ( $setup['get_setting'] as $setting) {
 					$wp_customize	-> get_setting( $setting )->transport = 'postMessage';
 				}
 			}
-
-
 
 			//add settings and controls
 			if ( isset( $setup['add_setting_control'])) {
@@ -201,7 +195,7 @@ if ( ! class_exists( 'TC_customize' ) ) :
 						$option_controls[$con] = isset( $options[$con]) ?  $options[$con] : null;
 					}
 
-					//add control with a dynamic class instanciation if not default
+					//add control with a class instanciation if not default
 					if( ! isset( $options['control']) )
 						$wp_customize	-> add_control( $key,$option_controls );
 					else
@@ -226,9 +220,20 @@ if ( ! class_exists( 'TC_customize' ) ) :
 				'tc-customizer-preview' ,
 				sprintf('%1$s/inc/admin/js/theme-customizer-preview%2$s.js' , get_template_directory_uri(), ( defined('WP_DEBUG') && true === WP_DEBUG ) ? '' : '.min' ),
 				array( 'customize-preview' , 'underscore' ),
-				'20120827' ,
+				CUSTOMIZR_VER ,
 				true
 			);
+
+			//localizes
+			wp_localize_script( 
+		        'tc-customizer-preview', 
+		        'TCPreviewParams',
+		        apply_filters('tc_js_customizer_control_params' ,
+			        array(
+			        	'themeFolder' 		=> get_template_directory_uri(),
+			        )
+			    )
+	        );
 		}
 
 
@@ -242,14 +247,13 @@ if ( ! class_exists( 'TC_customize' ) ) :
 		 */
 		function tc_customize_controls_js_css() {
 
-			wp_register_style(
+			wp_enqueue_style( 
 				'tc-customizer-controls-style',
 				sprintf('%1$s/inc/admin/css/theme-customizer-control%2$s.css' , get_template_directory_uri(), ( defined('WP_DEBUG') && true === WP_DEBUG ) ? '' : '.min' ),
 				array( 'customize-controls' ),
 				CUSTOMIZR_VER,
 				$media = 'all'
 			);
-			wp_enqueue_style('tc-customizer-controls-style');
 			wp_enqueue_script(
 				'tc-customizer-controls',
 				sprintf('%1$s/inc/admin/js/theme-customizer-control%2$s.js' , get_template_directory_uri(), ( defined('WP_DEBUG') && true === WP_DEBUG ) ? '' : '.min' ),
@@ -257,6 +261,17 @@ if ( ! class_exists( 'TC_customize' ) ) :
 				CUSTOMIZR_VER ,
 				true
 			);
+
+			//select2 stylesheet
+			//overriden by some specific style in theme-customzer-control.css
+			wp_enqueue_style(
+				'tc-select2-css',
+				sprintf('%1$s/inc/admin/js/lib/select2.min.css', get_template_directory_uri() ),
+				array( 'customize-controls' ),
+				CUSTOMIZR_VER,
+				$media = 'all'
+			);
+
 
 			//gets the featured pages id from init
 			$fp_ids				= apply_filters( 'tc_featured_pages_ids' , TC_init::$instance -> fp_ids);

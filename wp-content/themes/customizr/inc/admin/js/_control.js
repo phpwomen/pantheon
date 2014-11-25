@@ -139,7 +139,33 @@
       controls: [
         'tc_theme_options[tc_show_post_metas_home]',
         'tc_theme_options[tc_show_post_metas_single_post]',
-        'tc_theme_options[tc_show_post_metas_post_lists]'
+        'tc_theme_options[tc_show_post_metas_post_lists]',
+        'tc_theme_options[tc_show_post_metas_categories]',
+        'tc_theme_options[tc_show_post_metas_tags]',
+        'tc_theme_options[tc_show_post_metas_publication_date]',
+        'tc_theme_options[tc_show_post_metas_update_date]',
+        'tc_theme_options[tc_post_metas_update_notice_text]',
+        'tc_theme_options[tc_post_metas_update_notice_interval]',
+        'tc_theme_options[tc_show_post_metas_author]'
+      ],
+      callback: function (to) {
+        return '1' == to;
+      }
+    },
+    'tc_theme_options[tc_show_post_metas_update_date]' : {
+      controls: [
+        'tc_theme_options[tc_post_metas_update_date_format]',
+        'tc_theme_options[tc_post_metas_update_notice_in_title]'
+      ],
+      callback: function (to) {
+        return '1' == to;
+      }
+    },
+    'tc_theme_options[tc_post_metas_update_notice_in_title]' : {
+      controls: [
+        'tc_theme_options[tc_post_metas_update_notice_text]',
+        'tc_theme_options[tc_post_metas_update_notice_format]',
+        'tc_theme_options[tc_post_metas_update_notice_interval]'
       ],
       callback: function (to) {
         return '1' == to;
@@ -160,6 +186,24 @@
         'tc_theme_options[tc_sticky_shrink_title_logo]',
         'tc_theme_options[tc_sticky_show_menu]',
         'tc_theme_options[tc_sticky_transparent_on_scroll]'
+      ],
+      callback: function (to) {
+        return '1' == to;
+      }
+    },
+    'tc_theme_options[tc_comment_bubble_color_type]' : {
+      controls: [
+        'tc_theme_options[tc_comment_bubble_color]',
+      ],
+      callback: function (to) {
+        return 'custom' == to;
+      }
+    },
+    'tc_theme_options[tc_comment_show_bubble]' : {
+      controls: [
+        'tc_theme_options[tc_comment_bubble_shape]',
+        'tc_theme_options[tc_comment_bubble_color_type]',
+        'tc_theme_options[tc_comment_bubble_color]'
       ],
       callback: function (to) {
         return '1' == to;
@@ -263,13 +307,31 @@
     });
 
     /* SELECT */
-    $('select[data-customize-setting-link]').each( function() {
+    //Exclude skin
+    $('select[data-customize-setting-link]').not('select[data-customize-setting-link="tc_theme_options[tc_skin]"]').each( function() {
       $(this).selecter({
       //triggers a change event on the view, passing the newly selected value + index as parameters.
       // callback : function(value, index) {
       //   self.triggerSettingChange( window.event || {} , value, index); // first param is a null event.
       // }
       });
+    });
+
+    //Skins handled with select2
+    function paintOptionElement(state) {
+        if (!state.id) return state.text; // optgroup
+        return '<span class="tc-select2-skin-color" style="background:' + $(state.element).data('hex') + '">' + $(state.element).data('hex') + '<span>';
+    }
+    //http://ivaynberg.github.io/select2/#documentation
+    $('select[data-customize-setting-link="tc_theme_options[tc_skin]"]').select2({
+        minimumResultsForSearch: -1, //no search box needed
+        formatResult: paintOptionElement,
+        formatSelection: paintOptionElement,
+        escapeMarkup: function(m) { return m; }
+    })
+    .on("select2-highlight", function(e) {
+      //triggerChange = true @see val method doc here http://ivaynberg.github.io/select2/#documentation
+      $(this).select2("val" , e.val, true );
     });
 
     /* NUMBER */

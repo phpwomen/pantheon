@@ -1,0 +1,23 @@
+/*!
+Theme Name: Ward
+Theme URI: https://themes.bavotasan.com/2013/ward/
+Author: c.bavota
+Author URI: http://bavotasan.com/
+Description: Create a truly unique design with Ward, a lightweight and fully responsive HTML5 theme based on the Gridiculous boilerplate. Use the new Theme Options customizer to add your own background, page layout, site width and more. Distinguish each post with one of the eight supported post formats, such as: Video, Image, Aside, Status, Audio, Quote, Link and Gallery. Install JetPack to display each of your galleries through a tiled view and jQuery carousel. Compatible with bbPress & BuddyPress. Built using SASS, Compass and Twitter Bootstrap. Ward uses Google Fonts for improved typeface readability and works perfectly in desktop browsers, tablets and handheld devices. For a live demo go to http://demos.bavotasan.com/ward/.
+Version: 1.0.6
+Tags: black, blue, gray, silver, white, light, one-column, two-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, buddypress, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Ward WordPress Theme, Copyright 2014 c.bavota
+Ward is distributed under the terms of the GNU GPL
+*/
+
+@import "compass/css3";
+
+@import "mixins";
+@import "bootstrap3_full";
+@import "fontawesome";
+@import "theme";
+@import "wp";

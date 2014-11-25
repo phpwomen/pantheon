@@ -140,7 +140,7 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
 
       //gets the skins : filters the files with a css extension and generates and array[] : $key = filename.css => $value = filename
       $files            = scandir($path) ;
-      foreach ( $files as $file) {
+      foreach( $files as $file ) {
           //skips the minified
           if ( false !== strpos($file, '.min.') )
             continue;
@@ -151,8 +151,20 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
             }
           }
         }//endforeach
+      $_to_return = array();
 
-        return $skin_list;
+      //Order skins like in the default array
+      foreach( $default_skin_list as $_key => $value ) {
+        if( isset($skin_list[$_key]) ) {
+          $_to_return[$_key] = $skin_list[$_key];
+        }
+      }
+      //add skins not included in default
+      foreach( $skin_list as $_file => $_name ) {
+        if( ! isset( $_to_return[$_file] ) )
+          $_to_return[$_file] = $_name;
+      }
+      return $_to_return;
     }//end of function
 
 
@@ -205,8 +217,8 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
      * @since Customizr 3.0.11
      * @updated Customizr 3.0.15
      */
-    private function tc_skin_choices() {
-        $parent_skins     = $this -> tc_get_skins(TC_BASE .'inc/assets/css');
+    private function tc_build_skin_list() {
+        $parent_skins   = $this -> tc_get_skins(TC_BASE .'inc/assets/css');
         $child_skins    = ( TC___::$instance -> tc_is_child() && file_exists(TC_BASE_CHILD .'inc/assets/css') ) ? $this -> tc_get_skins(TC_BASE_CHILD .'inc/assets/css') : array();
         $skin_list      = array_merge( $parent_skins , $child_skins );
 
@@ -385,10 +397,12 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
               //skin select
               'tc_theme_options[tc_skin]'     => array(
                                 'default'   =>  'blue3.css' ,
+                                'control'   => 'TC_controls' ,
                                 'label'     =>  __( 'Choose a predefined skin' , 'customizr' ),
                                 'section'   =>  'tc_skins_settings' ,
                                 'type'      =>  'select' ,
-                                'choices'   =>  $this -> tc_skin_choices()
+                                'choices'    =>  $this -> tc_build_skin_list(),
+                                'transport'   =>  'postMessage',
               ),
 
               'tc_theme_options[tc_minified_skin]'  =>  array(
@@ -678,14 +692,14 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
                                      COMMENTS SETTINGS
       ------------------------------------------------------------------------------------------------------*/    
       $comment_option_map = array(
-
               'tc_theme_options[tc_page_comments]'  =>  array(
-                                'default'       => 0,
-                                'control'   => 'TC_controls' ,
+                                'default'     => 0,
+                                'control'     => 'TC_controls',
                                 'label'       => __( 'Enable comments on pages' , 'customizr' ),
-                                'section'     => 'tc_page_comments' ,
-                                'type'        => 'checkbox' ,
-                                'notice'    => __( 'This option will enable comments on pages. You can disable comments for a single page in the quick edit mode of the page list screen.' , 'customizr' ),
+                                'section'     => 'tc_page_comments',
+                                'type'        => 'checkbox',
+                                'priority'    => 20,
+                                'notice'      => __( 'This option will enable comments on pages. You can disable comments for a single page in the quick edit mode of the page list screen.' , 'customizr' ),
               )
       );
       $comment_option_map = apply_filters( 'tc_comment_option_map', $comment_option_map , $get_default );
@@ -953,7 +967,8 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
                               'static_front_page' ,
                               'colors',
                               'nav',
-                              'title_tagline'
+                              'title_tagline',
+                              'tc_page_comments'
             )
       );
     }
@@ -1080,7 +1095,7 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
                                             'description' =>  __( 'Set up post metas options' , 'customizr' ),
                                             'panel'   => 'tc-content-panel'
                         ),
-                        'tc_page_comments'          => array(
+                        'tc_comments_settings'          => array(
                                             'title'     =>  __( 'Comments' , 'customizr' ),
                                             'priority'    =>  $this -> is_wp_version_before_4_0 ? 25 : 60,
                                             'description' =>  __( 'Set up comments options' , 'customizr' ),
@@ -1125,7 +1140,8 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
         'tc_theme_options[tc_social_in_right-sidebar]',
         'tc_theme_options[tc_social_in_footer]',
         'tc_theme_options[tc_top_border]',
-        'tc_theme_options[tc_custom_css]'
+        'tc_theme_options[tc_custom_css]',
+        'tc_theme_options[tc_page_comments]'
       );
       foreach ($_to_unset as $_value) {
         if ( ! isset($_map['add_setting_control'][$_value]) )
@@ -1137,14 +1153,14 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
       $_new_settings = array(
         /*********** OLD **************/
         //Breadcrumb
-                'tc_theme_options[tc_breadcrumb]' => array(
-                                'default'       => 1,//Breadcrumb is checked by default
-                                'label'         => __( 'Display Breadcrumb' , 'customizr' ),
-                                'control'     =>  'TC_controls' ,
-                                'section'       => 'tc_breadcrumb_settings' ,
-                                'type'          => 'checkbox' ,
-                                'priority'      => 1,
-                ),
+              'tc_theme_options[tc_breadcrumb]' => array(
+                              'default'       => 1,//Breadcrumb is checked by default
+                              'label'         => __( 'Display Breadcrumb' , 'customizr' ),
+                              'control'     =>  'TC_controls' ,
+                              'section'       => 'tc_breadcrumb_settings' ,
+                              'type'          => 'checkbox' ,
+                              'priority'      => 1,
+              ),
                 
               //Global sidebar layout
               'tc_theme_options[tc_sidebar_global_layout]' => array(
@@ -1362,7 +1378,7 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
                                 'transport'     => 'postMessage',
               ),
               'tc_theme_options[tc_menu_resp_dropdown_limit_to_viewport]'  =>  array(
-                                'default'       => 1,
+                                'default'       => 0,
                                 'control'       => 'TC_controls' ,
                                 'label'         => __( "In responsive mode, limit the height of the dropdown menu block to the visible viewport" , "customizr" ),
                                 'section'       => 'nav' ,
@@ -1501,10 +1517,11 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
               'tc_theme_options[tc_show_post_metas_home]'  =>  array(
                                 'default'       => 0,
                                 'control'     => 'TC_controls' ,
+                                'title'         => __( 'Select the contexts' , 'customizr' ),
                                 'label'         => __( "Display posts metas on home" , "customizr" ),
                                 'section'       => 'tc_post_metas_settings' ,
                                 'type'          => 'checkbox',
-                                'priority'      => 10,
+                                'priority'      => 15,
                                 'transport'   => 'postMessage'
               ),
               'tc_theme_options[tc_show_post_metas_single_post]'  =>  array(
@@ -1513,7 +1530,7 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
                                 'label'         => __( "Display posts metas for single posts" , "customizr" ),
                                 'section'       => 'tc_post_metas_settings' ,
                                 'type'          => 'checkbox',
-                                'priority'      => 10,
+                                'priority'      => 20,
                                 'transport'   => 'postMessage'
               ),
               'tc_theme_options[tc_show_post_metas_post_lists]'  =>  array(
@@ -1522,10 +1539,114 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
                                 'label'         => __( "Display posts metas in post lists (archives, blog page)" , "customizr" ),
                                 'section'       => 'tc_post_metas_settings' ,
                                 'type'          => 'checkbox',
-                                'priority'      => 10,
+                                'priority'      => 25,
                                 'transport'   => 'postMessage'
               ),
+
+              'tc_theme_options[tc_show_post_metas_categories]'  =>  array(
+                                'default'       => 1,
+                                'control'     => 'TC_controls',
+                                'title'         => __( 'Select the metas to display' , 'customizr' ),
+                                'label'         => __( "Display hierarchical taxonomies (like categories)" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          => 'checkbox',
+                                'priority'      => 30
+              ),
               
+              'tc_theme_options[tc_show_post_metas_tags]'  =>  array(
+                                'default'       => 1,
+                                'control'     => 'TC_controls',
+                                'label'         => __( "Display non-hierarchical taxonomies (like tags)" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          => 'checkbox',
+                                'priority'      => 35
+              ),
+
+              'tc_theme_options[tc_show_post_metas_publication_date]'  =>  array(
+                                'default'       => 1,
+                                'control'     => 'TC_controls',
+                                'label'         => __( "Display the publication date" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          => 'checkbox',
+                                'priority'      => 40
+              ),
+
+              'tc_theme_options[tc_show_post_metas_update_date]'  =>  array(
+                                'default'       => 0,
+                                'control'     => 'TC_controls',
+                                'label'         => __( "Display the update date" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          => 'checkbox',
+                                'priority'      => 45,
+                                'notice'    => __( 'If this option is checked, additional date informations about the the last post update can be displayed (nothing will show up if the post has never been updated).' , 'customizr' ),
+              ),
+
+              'tc_theme_options[tc_post_metas_update_date_format]'  =>  array(
+                                'default'       => 'days',
+                                'control'       => 'TC_controls',
+                                'label'         => __( "Select the last update format" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          =>  'select' ,
+                                'choices'       => array(
+                                        'days'     => __( 'Nb of days since last update' , 'customizr' ),
+                                        'date'     => __( 'Date of the last update' , 'customizr' )
+                                ),
+                                'priority'      => 50
+              ),
+              'tc_theme_options[tc_show_post_metas_author]'  =>  array(
+                                'default'       => 1,
+                                'control'     => 'TC_controls',
+                                'label'         => __( "Display the author" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          => 'checkbox',
+                                'priority'      => 55
+              ),
+              'tc_theme_options[tc_post_metas_update_notice_in_title]'  =>  array(
+                                'default'       => 1,
+                                'control'       => 'TC_controls',
+                                'label'         => __( "Display a recent update notice" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          => 'checkbox',
+                                'priority'      => 65,
+                                'notice'    => __( 'If this option is checked, a customizable recent update notice is displayed next to the post title.' , 'customizr' )
+              ),
+              'tc_theme_options[tc_post_metas_update_notice_interval]'  =>  array(
+                                'default'       => 10,
+                                'control'       => 'TC_controls',
+                                'label'         => __( "Display the notice if the last update is less (strictly) than n days old" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          => 'number' ,
+                                'step'          => 1,
+                                'min'           => 0,
+                                'priority'      => 70,
+                                'notice'    => __( 'Set a maximum interval (in days) during which the last update notice will be displayed.' , 'customizr' ),
+              ),
+              'tc_theme_options[tc_post_metas_update_notice_text]'  =>  array(
+                                'default'       => __( "Recently updated !" , "customizr" ),
+                                'control'       => 'TC_controls',
+                                'label'         => __( "Update notice text" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          => 'text',
+                                'priority'      => 75,
+                                'transport'   => 'postMessage'
+              ),
+              'tc_theme_options[tc_post_metas_update_notice_format]'  =>  array(
+                                'default'       => 'label-default',
+                                'control'       => 'TC_controls',
+                                'label'         => __( "Update notice style" , "customizr" ),
+                                'section'       => 'tc_post_metas_settings',
+                                'type'          =>  'select' ,
+                                'choices'       => array(
+                                        'label-default'   => __( 'Default (grey)' , 'customizr' ),
+                                        'label-success'   => __( 'Success (green)' , 'customizr' ),
+                                        'label-warning'   => __( 'Alert (orange)' , 'customizr' ),
+                                        'label-important' => __( 'Important (red)' , 'customizr' ),
+                                        'label-info'      => __( 'Info (blue)' , 'customizr' )
+                                ),
+                                'priority'      => 80,
+                                'transport'   => 'postMessage'
+              ),
+
               /* Post list layout */
               'tc_theme_options[tc_post_list_excerpt_length]'  =>  array(
                                 'default'       => 55,
@@ -1635,7 +1756,70 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
                                 'priority'      => 20,
                                 'transport'   => 'postMessage'
               ),
+              /* Comments */
+              'tc_theme_options[tc_comment_show_bubble]'  =>  array(
+                                'default'       => 1,
+                                'title'         => __('Comments bubbles' , 'customizr'),
+                                'control'       => 'TC_controls' ,
+                                'label'         => __( "Display the number of comments in a bubble next to the post title" , "customizr" ),
+                                'section'       => 'tc_comments_settings' ,
+                                'type'          => 'checkbox',
+                                'priority'      => 1
+              ),
 
+              'tc_theme_options[tc_comment_bubble_shape]' => array(
+                                'default'     => 'default',
+                                'control'     => 'TC_controls',
+                                'label'       => __( 'Comments bubble shape' , 'customizr' ),
+                                'section'     => 'tc_comments_settings',
+                                'type'      =>  'select' ,
+                                'choices'     => array(
+                                        'default'             => __( "Small bubbles" , 'customizr' ),
+                                        'custom-bubble-one'   => __( 'Large bubbles' , 'customizr' ),
+                                ),
+                                'priority'    => 10,
+              ),
+
+              'tc_theme_options[tc_comment_bubble_color_type]' => array(
+                                'default'     => 'custom',
+                                'control'     => 'TC_controls',
+                                'label'       => __( 'Comments bubble color' , 'customizr' ),
+                                'section'     => 'tc_comments_settings',
+                                'type'      =>  'select' ,
+                                'choices'     => array(
+                                        'skin'     => __( "Skin color" , 'customizr' ),
+                                        'custom'   => __( 'Custom' , 'customizr' ),
+                                ),
+                                'priority'    => 20,
+              ),
+
+              'tc_theme_options[tc_comment_bubble_color]' => array(
+                                'default'     => '#F00',
+                                'control'     => 'WP_Customize_Color_Control',
+                                'label'       => __( 'Comments bubble color' , 'customizr' ),
+                                'section'     => 'tc_comments_settings',
+                                'type'        =>  'color' ,
+                                'priority'    => 30,
+                                'sanitize_callback'    => array( $this, 'tc_sanitize_hex_color' ),
+                                'sanitize_js_callback' => 'maybe_hash_hex_color',
+                                'transport'   => 'postMessage'
+              ),
+
+              'tc_theme_options[tc_page_comments]'  =>  array(
+                                'default'     => 0,
+                                'control'     => 'TC_controls',
+                                'title'       => __( 'Other comments settings' , 'customizr'),
+                                'label'       => __( 'Enable comments on pages' , 'customizr' ),
+                                'section'     => 'tc_comments_settings',
+                                'type'        => 'checkbox',
+                                'priority'    => 40,
+                                'notice'      => sprintf('%1$s %2$s <a href="%3$s" target="_blank">%4$s</a>',
+                                    __( 'If checked, this option will enable comments on pages. You can disable comments for a single page in the quick edit mode of the page list screen.' , 'customizr' ),
+                                    __( "Change other comments settings in the" , 'customizr'),
+                                    admin_url() . 'options-discussion.php',
+                                    __( 'discussion settings page.' , 'customizr' )
+                                ),
+              ),
               /* Footer */
               'tc_theme_options[tc_show_back_to_top]'  =>  array(
                                 'default'       => 1,

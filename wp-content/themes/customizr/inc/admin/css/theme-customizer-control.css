@@ -241,13 +241,14 @@ li[id*="customize-control-"] {
 }
 .customize-control-title {
 	color: #555;
+	font-size: 13px;
 }
 .tc-customizr-title {
 	/* color: #555; */
 	text-transform: uppercase;
 	/* text-shadow: 0 1px 0 #FFF; */
 	margin: 1em 0em 5px 0em;
-	font-size: 15px!important;
+	font-size: 14px!important;
 	border-bottom: 1px dotted #1ABC9C;
 	padding-bottom: 5px;
 }
@@ -452,15 +453,14 @@ li#customize-control-tc_theme_options-tc_custom_css textarea {
  * Copyright 2014 Ben Plum; MIT Licensed 
  */ 
 .stepper { border-radius: 3px; margin: 0 0 10px 0; overflow: hidden; position: relative; width: 35%;float: left; clear: both;}
-.stepper .stepper-input { background: #F9F9F9; border: 1px solid #ccc; border-radius: 3px; color: #333; font-size: 13px; line-height: 1.2; margin: 0; overflow: hidden; padding: 5px 10px 5px; width: 100%!important; z-index: 49;
-	-moz-appearance: textfield;
+.stepper .stepper-input { background: #F9F9F9; border: 1px solid #ccc; border-radius: 3px; color: #333; font-size: 13px; line-height: 1.2; margin: 0; overflow: hidden; padding: 5px 10px 5px!important; width: 100%!important; z-index: 49;	-moz-appearance: textfield;max-width: none!important;
 }
 
 .stepper .stepper-input::-webkit-inner-spin-button,
 .stepper .stepper-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
 
 .stepper .stepper-input:focus { background-color: #fff; }
-.stepper .stepper-arrow { background: #eee url(img/jquery.fs.stepper-arrows.png) no-repeat; border: 1px solid #ccc; cursor: pointer; display: block; height: 50%; position: absolute; right: 0; text-indent: -99999px; width: 20px; z-index: 50; }
+.stepper .stepper-arrow { background: #eee url(img/jquery.fs.stepper-arrows.png) no-repeat; border: 1px solid #ccc; cursor: pointer; display: block; height: 46%; position: absolute; right: 0; text-indent: -99999px; width: 20px; z-index: 50; }
 .stepper .stepper-arrow.up { background-position: center top; border-bottom: none; top: 0; }
 .stepper .stepper-arrow.down { background-position: center bottom; bottom: 0; }
 
@@ -474,3 +474,76 @@ li#customize-control-tc_theme_options-tc_custom_css textarea {
 
 .stepper.disabled .stepper-input { background: #fff; border-color: #eee; color: #ccc; }
 .stepper.disabled .stepper-arrow { background: #fff; border-color: #eee; cursor: default; }
+
+
+/* SELECT 2 SPECIFICS */
+.wp-customizer .select2-container {
+	width: 100%
+}
+.wp-customizer .select2-drop {
+	z-index: 999999;
+}
+.wp-customizer .select2-drop-active {
+    border: 1px solid #1ABC9C;
+}
+.wp-customizer .select2-drop.select2-drop-above.select2-drop-active {
+    border-top: 1px solid #1ABC9C;
+}
+.wp-customizer .select2-container-active .select2-choices {
+    border: 1px solid #1ABC9C;
+}
+.wp-customizer .select2-container-multi.select2-container-active .select2-choices {
+    border: 1px solid #1ABC9C;
+}
+.wp-customizer .select2-container-active .select2-choice,
+.wp-customizer .select2-container-active .select2-choices {
+    border: 1px solid #1ABC9C;
+}
+.wp-customizer .select2-results .select2-highlighted {
+    background: #eee;
+}
+.wp-customizer .select2-results li em {
+    background: #F4F4F4;
+}
+.wp-customizer .select2-container .select2-choice > .select2-chosen {
+	margin-right: 0px;
+}
+.wp-customizer .select2-container .select2-choice {
+	padding: 0px;
+}
+.wp-customizer li.select2-results-dept-0.select2-result.select2-result-selectable {
+	padding: 0;
+}
+.wp-customizer .select2-results .select2-result-label {
+	padding: 0;
+}
+.select2-results .tc-select2-skin-color {
+	padding: 8px 0px;
+}
+.wp-customizer .select2-results {
+	max-height: 360px
+}
+.tc-select2-skin-color {
+	display: inline-block;
+	-webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.65);
+	box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.65);
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: bold;
+	color: #FFF;
+	-webkit-transition: box-shadow .25s ease;
+	-moz-transition: box-shadow .25s ease;
+	-ms-transition: box-shadow .25s ease;
+	-o-transition: box-shadow .25s ease;
+	transition: box-shadow .25s ease;
+	/* vertical-align: middle; */
+}
+.select2-chosen .tc-select2-skin-color, .tc-select2-skin-color:hover {
+	-webkit-box-shadow: none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+	/*font-size: 15px;*/
+}

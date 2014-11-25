@@ -1,0 +1,345 @@
+/*
+Theme Name: Ward
+Description: Used to style the TinyMCE editor.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+
+/* =General
+-------------------------------------------------------------- */
+html .mceContentBody {
+	}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin: 20px 0;
+  text-rendering: optimizelegibility;
+}
+.basic h1, .basic h2, .basic h3, .basic h4, .basic h5, .basic h6 {
+  color: #333333;
+  font-family: Lato, sans-serif;
+  font-weight: normal;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+.basic h1 a, .basic h2 a, .basic h3 a, .basic h4 a, .basic h5 a, .basic h6 a {
+  color: #333333;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  text-decoration: none;
+}
+.basic a {
+  color: #0088CC;
+}
+.basic a:hover {
+  color: #444;
+}
+
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+ul, ol {
+  padding: 0 0 0 20px;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+table {
+  width: 100%;
+  background: #fff;
+}
+table td, table th {
+  padding: 8px;
+  border: 1px solid #bbb;
+  text-align: left;
+}
+table th {
+  background: #ddd;
+  font-weight: bold;
+}
+table caption {
+  padding: 1em 0;
+  text-align: center;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  line-height: 1.4;
+  margin: 4px 0 0;
+  padding: 0 0 .5em 0;
+}
+
+blockquote {
+  margin: 5px 0 0 0;
+  border-left: 10px solid #ccc;
+  padding-left: 12px;
+}
+
+cite {
+  text-align: right;
+  font-style: normal;
+  display: block;
+}
+cite:before {
+  content: '\2013 \00A0';
+}
+
+pre,
+code {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font: 0.8em 'Andale Mono', 'Lucida Console', monospace;
+  background: #f2f2f2;
+  border: 1px solid #e6e6e6;
+  color: #888;
+  padding: 2px 4px;
+}
+
+pre {
+  white-space: pre;
+  word-wrap: normal;
+  overflow-x: scroll;
+  line-height: 1.3;
+  margin: 1em 0;
+}
+
+select {
+  width: 100%;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+del {
+  color: red;
+  text-decoration: line-through;
+}
+
+ins {
+  border-bottom: 1px solid green;
+  text-decoration: none;
+  color: green;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+sup, sub {
+  line-height: 0;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted;
+}
+
+address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+
+.mceContentBody blockquote {
+	font-weight: normal;
+	margin: 5px 0 1em 0;
+	border-color: #ccc;
+	color: #888;
+	border-left: 10px solid #ccc;
+	padding-left: 12px;
+	}
+
+.mceContentBody blockquote em,
+.mceContentBody blockquote i,
+.mceContentBody blockquote cite {
+	font-style: normal;
+	}
+
+/* =Alignments
+-------------------------------------------------------------- */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+	}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+	}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+
+/* =Images
+-------------------------------------------------------------- */
+.img-rounded,.img-polaroid,.img-circle,.gallery-icon img{padding:0;border:0;background:none}.img-rounded{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px}.img-polaroid,.gallery-icon img{padding:4px;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);-webkit-box-shadow:0 1px 3px rgba(0,0,0,.1);-moz-box-shadow:0 1px 3px rgba(0,0,0,.1);box-shadow:0 1px 3px rgba(0,0,0,.1)}.img-circle{-webkit-border-radius:500px;-moz-border-radius:500px;border-radius:500px}
+
+/* =Image captions
+-------------------------------------------------------------- */
+.wp-caption {
+    background: #fff;
+    border: 1px solid #ddd;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 10px 10px 5px;
+    text-align: center;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	}
+
+.wp-caption-dd {
+	padding: 5px 0 0;
+	}
+
+.wp-caption a {
+	display: block;
+	border: 0;
+	}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+	}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+	}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+	}
+
+.wp-caption img {
+    border: 0 none;
+    margin:0;
+    padding: 0;
+    display: inline-block;
+    max-width: 100%;
+	}
+
+.wp-caption p.wp-caption-text {
+    font-size: 80%;
+    margin:0;
+    padding:0 4px 5px;
+	}

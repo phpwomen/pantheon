@@ -9,6 +9,17 @@
 
 
 ( function( $ ) {
+	wp.customize( 'tc_theme_options[tc_skin]' , function( value ) {
+		value.bind( function( to ) {
+			if ( TCPreviewParams && TCPreviewParams.themeFolder ) {
+				//add a new link to the live stylesheet instead of replacing the actual skin link => avoid the flash of unstyle content during the skin load
+				var $skin_style_element = ( 0 === $('#live-skin-css').length ) ? $('<link>' , { id : 'live-skin-css' , rel : 'stylesheet'}) : $('#live-skin-css');
+				$skin_style_element.attr('href' , [ TCPreviewParams.themeFolder , '/inc/assets/css/' , to.replace('.css' , '.min.css') ].join('') );
+				if (  0 === $('#live-skin-css').length )
+					$('head').append($skin_style_element);
+			}
+		} );
+	} );
 	// Site title and description.
 	wp.customize( 'blogname' , function( value ) {
 		value.bind( function( to ) {
@@ -408,4 +419,38 @@
 			}
 		} );
 	});
+	wp.customize( 'tc_theme_options[tc_post_metas_update_notice_text]' , function( value ) {
+		value.bind( function( to ) {
+			$( '.tc-update-notice' ).html( to );
+		} );
+	} );
+
+	wp.customize( 'tc_theme_options[tc_comment_bubble_color]' , function( value ) {
+		value.bind( function( to ) {
+			$('#custom-bubble-color').remove();
+			var $style_element	= $('<style>' , { id : 'custom-bubble-color'}),
+				bubble_live_css = '';
+			//default bubble
+			bubble_live_css += '.comments-link .fs1 {color:' + to + ';}';
+			//custom bubble
+			bubble_live_css += '.comments-link .custom-bubble-one {border-color:' + to + ';color:' + to + '}';
+			bubble_live_css += '.comments-link .custom-bubble-one:before {border-color:' + to + ' rgba(0, 0, 0, 0);}';
+			$('head').append($style_element.html(bubble_live_css));
+		} );
+	} );
+	wp.customize( 'tc_theme_options[tc_post_metas_update_notice_format]' , function( value ) {
+		value.bind( function( to ) {
+			$( '.tc-update-notice').each( function() {
+				var classes = $(this).attr('class').split(' ');
+				for (var key in classes) {
+					if ( -1 !== (classes[key]).indexOf('label-') ) {
+						classes.splice(key, 1);
+					}
+				}
+				//rebuild the class attr
+				$(this).attr('class' , classes.join(' ') );
+			});
+			$( '.tc-update-notice' ).addClass( to );
+		} );
+	} );
 } )( jQuery );
