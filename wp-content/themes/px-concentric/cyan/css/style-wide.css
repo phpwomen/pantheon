@@ -1,0 +1,15 @@
+/*
+	Concentric by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,input,textarea,select
+	{
+		font-size: 13pt;
+		line-height: 1.75em;
+	}
