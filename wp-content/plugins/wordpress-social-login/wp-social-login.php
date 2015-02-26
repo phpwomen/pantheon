@@ -60,6 +60,7 @@ if( !defined( 'ABSPATH' ) ) exit;
 
 // --------------------------------------------------------------------
 
+ini_set('session.save_handler', 'files');
 @session_start();
 
 global $WORDPRESS_SOCIAL_LOGIN_VERSION;
