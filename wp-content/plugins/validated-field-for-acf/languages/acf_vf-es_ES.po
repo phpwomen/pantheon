@@ -1,0 +1,233 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Validated Field for ACF\n"
+"POT-Creation-Date: 2014-07-10 11:37-0800\n"
+"PO-Revision-Date: 2014-07-10 11:41-0800\n"
+"Last-Translator: Justin Silver <jsilver@doublesharp.com>\n"
+"Language-Team: DoubleSharp <info@doublesharp.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../validated_field_v4.php:30
+msgid "Enable Debug"
+msgstr "Habilitar Depuración"
+
+#: ../validated_field_v4.php:31
+msgid "Check this box to turn on debugging for Validated Fields."
+msgstr "Marque esta casilla para activar la depuración para Validado Fields."
+
+#: ../validated_field_v4.php:37
+msgid ""
+"Check this box to enable Draft validation globally, or uncheck to allow it "
+"to be set per field."
+msgstr ""
+"Marque esta casilla para activar el proyecto de validación a nivel mundial, "
+"o desmarque para permitir que sea configurada por campo."
+
+#: ../validated_field_v4.php:36
+msgid "Enable Draft Validation"
+msgstr "Habilitar Proyecto de Validación"
+
+#: ../validated_field_v4.php:43
+msgid "Check this box to turn on validation for front-end forms created with"
+msgstr ""
+"Marque esta casilla para activar la validación de formularios de "
+"aplicaciones para usuario creadas con"
+
+#: ../validated_field_v4.php:42
+msgid "Enable Front-End Validation"
+msgstr "Habilitar Abolladuras Validación"
+
+#: ../validated_field_v4.php:49
+msgid "Uncheck this box to turn off \"colors-fresh\" admin theme enqueued by"
+msgstr ""
+"Desactive esta casilla para desactivar \"colors-fresh\" admin tema en cola "
+"por"
+
+#: ../validated_field_v4.php:48
+msgid "Enqueue Admin CSS on Front-End"
+msgstr "Enqueue administración CSS en Front-End"
+
+#: ../validated_field_v4.php:53 ../validated_field_v4.php:504
+msgid "Validated Field"
+msgstr "Validado Campo"
+
+#: ../validated_field_v4.php:54 ../validated_field_v4.php:458
+msgid "Basic"
+msgstr "Básico"
+
+#: ../validated_field_v4.php:65 ../validated_field_v4.php:408
+msgid "Validation failed."
+msgstr "Error de validación."
+
+#: ../validated_field_v4.php:130
+msgid "Validated Field Settings"
+msgstr "Configuración de Validado Campo"
+
+#: ../validated_field_v4.php:307
+msgid "PHP Error"
+msgstr "PHP Error"
+
+#: ../validated_field_v4.php:314
+msgid "This field's validation is not properly configured."
+msgstr "La validación de este campo no está configurado correctamente."
+
+#: ../validated_field_v4.php:400
+msgid "The value"
+msgstr "El valor"
+
+#: ../validated_field_v4.php:400
+msgid "is already in use by"
+msgstr "ya está en uso por"
+
+#: ../validated_field_v4.php:457
+msgid "Layout"
+msgstr "Disposición"
+
+#: ../validated_field_v4.php:462
+msgid "Read Only?"
+msgstr "¿Sólo Lectura?"
+
+#: ../validated_field_v4.php:470 ../validated_field_v4.php:487
+msgid "Yes"
+msgstr "Sí"
+
+#: ../validated_field_v4.php:471 ../validated_field_v4.php:488
+msgid "No"
+msgstr "No"
+
+#: ../validated_field_v4.php:479
+msgid "Validate Drafts/Preview?"
+msgstr "¿Validar Borradores/Vista Previa?"
+
+#: ../validated_field_v4.php:495
+msgid "Warning"
+msgstr "Advertencia"
+
+#: ../validated_field_v4.php:497
+msgid ""
+"has been set to <code>false</code> which overrides field level configurations"
+msgstr ""
+"se ha ajustado a <code>false</ code> que anula las configuraciones a nivel "
+"de campo"
+
+#: ../validated_field_v4.php:516
+msgid "Field Type"
+msgstr "Tipo de Campo"
+
+#: ../validated_field_v4.php:548
+msgid "Input Mask"
+msgstr "Máscara de Entrada"
+
+#: ../validated_field_v4.php:550
+msgid ""
+"Use &#39;a&#39; to match A-Za-z, &#39;9&#39; to match 0-9, and &#39;*&#39; "
+"to match any alphanumeric."
+msgstr ""
+"Utilice &#39;a&#39; para que coincida con &#39;A-Za-z&#39;, '&#39;9&#39; "
+"para que coincida con 0-9, y &#39;*&#39; para emparejar cualquier "
+"alfanumérico."
+
+#: ../validated_field_v4.php:551
+msgid "More info."
+msgstr "Más info."
+
+#: ../validated_field_v4.php:564
+msgid "Validation Function"
+msgstr "Función de Validación"
+
+#: ../validated_field_v4.php:566
+msgid "How should the field be server side validated?"
+msgstr "¿Cómo debe el ámbito validada lado del servidor?"
+
+#: ../validated_field_v4.php:574
+msgid "None"
+msgstr "Ninguno"
+
+#: ../validated_field_v4.php:575
+msgid "Regular Expression"
+msgstr "Expresión Regular"
+
+#: ../validated_field_v4.php:577
+msgid "PHP Statement"
+msgstr "Declaración de PHP"
+
+#: ../validated_field_v4.php:588
+msgid "Validation Pattern"
+msgstr "Patrón de Validación"
+
+#: ../validated_field_v4.php:593
+msgid "Pattern match the input using"
+msgstr "Patrón coincide con la entrada utilizando"
+
+#: ../validated_field_v4.php:598
+msgid ""
+"Use any PHP code and return true or false. If nothing is returned it will "
+"evaluate to true."
+msgstr ""
+"Utilice cualquier código PHP y devolver verdadero o falso. Si no se devuelve "
+"nada que se evaluará como true."
+
+#: ../validated_field_v4.php:599
+msgid "Available variables"
+msgstr "variables disponibles"
+
+#: ../validated_field_v4.php:599
+msgid "returned to UI"
+msgstr "regresado a la interfaz de usuario"
+
+#: ../validated_field_v4.php:600
+msgid "Example"
+msgstr "Ejemplo"
+
+#: ../validated_field_v4.php:604
+msgid "SQL"
+msgstr "SQL"
+
+#: ../validated_field_v4.php:621
+msgid "Error Message"
+msgstr "Mensaje de Error"
+
+#: ../validated_field_v4.php:635
+msgid "Unique Value?"
+msgstr "¿Valor único?"
+
+#: ../validated_field_v4.php:639
+msgid "Make sure this value is unique for..."
+msgstr "Asegúrese de que este valor es único para..."
+
+#: ../validated_field_v4.php:648
+msgid "Non-Unique Value"
+msgstr "Valor no Unique"
+
+#: ../validated_field_v4.php:649
+msgid "Unique Globally"
+msgstr "Único Globalmente"
+
+#: ../validated_field_v4.php:650 ../validated_field_v4.php:651
+msgid "Unique For Post Type"
+msgstr "Unique Para Tipo Envío"
+
+#: ../validated_field_v4.php:651
+msgid "Key"
+msgstr "Clave"
+
+#: ../validated_field_v4.php:661
+msgid "Apply to which post statuses?"
+msgstr "¿Aplicar para que destinan los estados?"
+
+#: ../validated_field_v4.php:992
+msgid "Read only"
+msgstr "Sólo lectura"
+
+#~ msgid "Unique For Post Type -> Key"
+#~ msgstr "Unique Para Tipo Envío -> Clave"

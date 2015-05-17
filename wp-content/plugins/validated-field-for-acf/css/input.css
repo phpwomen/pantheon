@@ -1,0 +1,6 @@
+.validated-select { width: 200px; }
+.validation-type { display: none; }
+.acf-vf-readonly { display: block !important; }
+
+/* required for conditional logic when the default view is hidden */
+.acf-field-validated-field>.acf-input>.validated-field>.hidden-by-conditional-logic { display: block !important; }
