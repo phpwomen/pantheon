@@ -198,7 +198,7 @@
                 $args = array (
                     'post_type'              => 'phpw_usergroup',
                     'order'                  => 'ASC',
-                    'orderby'                => 'rand',
+                    'orderby'                => 'title',
                 );
 
                 // The Query
