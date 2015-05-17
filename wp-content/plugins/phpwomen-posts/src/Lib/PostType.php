@@ -36,7 +36,7 @@ class PostType
             'not_found_in_trash' => __('Not found in Trash', 'phpwomen_posts_usergroup'),
         );
         $rewrite = array(
-            'slug' => 'post_type',
+            'slug' => 'usergroup',
             'with_front' => true,
             'pages' => true,
             'feeds' => true,
