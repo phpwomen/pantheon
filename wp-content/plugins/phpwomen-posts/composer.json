@@ -1,0 +1,16 @@
+{
+    "name": "phpwomen/posts",
+    "description": "PHPWomen Blog Custom Post Types",
+    "type": "Plugin",
+    "authors": [
+        {
+            "name": "BinaryKitten",
+            "email": "Kat@BinaryKitten.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+      "psr-4": {"PHPWomen\\Posts\\": "src/"}
+    }
+}
