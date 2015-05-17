@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: BK PluginName
+ * Plugin Name: PHPWomen Post Types
  * Version: 1.0
  * Plugin URI:
  * Description: Plugin Description
- * Text Domain: BK-pluginname
+ * Text Domain: phpwomen_posts
  */
 namespace PHPWomen\Posts;
 
