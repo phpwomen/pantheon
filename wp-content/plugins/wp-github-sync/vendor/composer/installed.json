@@ -1,0 +1,53 @@
+[
+    {
+        "name": "maadhattah/cyps",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mAAdhaTTah/cyps.git",
+            "reference": "fac2e1d0f87c8b8d12f3aa8c55c47bc8ce21ed98"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mAAdhaTTah/cyps/zipball/fac2e1d0f87c8b8d12f3aa8c55c47bc8ce21ed98",
+            "reference": "fac2e1d0f87c8b8d12f3aa8c55c47bc8ce21ed98",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1"
+        },
+        "time": "2015-04-25 02:19:10",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "Cyps.php"
+            ]
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "mustangostang",
+                "email": "vlad.andersen@gmail.com"
+            },
+            {
+                "name": "maadhattah",
+                "email": "jamesorodig@gmail.com"
+            }
+        ],
+        "description": "A simple YAML loader/dumper class for PHP",
+        "homepage": "https://github.com/maadhattah/cyps/",
+        "keywords": [
+            "cyps",
+            "spyc",
+            "yaml",
+            "yml"
+        ],
+        "support": {
+            "source": "https://github.com/mAAdhaTTah/cyps/tree/1.0.0"
+        }
+    }
+]

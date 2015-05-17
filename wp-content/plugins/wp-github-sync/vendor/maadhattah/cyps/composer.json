@@ -1,0 +1,29 @@
+{
+    "name": "maadhattah/cyps",
+    "description": "A simple YAML loader/dumper class for PHP",
+    "type": "library",
+    "keywords": [
+        "cyps",
+        "spyc",
+        "yaml",
+        "yml"
+    ],
+    "homepage": "https://github.com/maadhattah/cyps/",
+    "authors" : [
+        {
+            "name": "mustangostang",
+            "email": "vlad.andersen@gmail.com"
+        },
+        {
+            "name": "maadhattah",
+            "email": "jamesorodig@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.1"
+    },
+    "autoload": {
+        "files": [ "Cyps.php" ]
+    }
+}
