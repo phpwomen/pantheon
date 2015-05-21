@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: syntax-highlighter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-18 19:28+0330\n"
+"PO-Revision-Date: \n"
+"Last-Translator: mostafa soufi <mostafa.s1990gmail.com>\n"
+"Language-Team:  <mostafa.s1990@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:177
+msgid "Syntax Highlighter"
+msgstr "Syntax Highlighter"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:186
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/includes/common-controller.php:193
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:203
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:211
+msgid "Done!"
+msgstr "انجام شد!"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:220
+msgid "Syntax Highlighter Options"
+msgstr "تنظیمات Syntax Highlighter"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:225
+msgid "Version"
+msgstr "نسخه"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:233
+msgid "Theme"
+msgstr "پوسته"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:243
+msgid "Update Options"
+msgstr "به روزرسانی تنظیمات"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:248
+msgid "Uninstall"
+msgstr "حذف"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:251
+msgid "All the settings of &quot;Syntax Highlighter&quot; are deleted."
+msgstr "همه تنظیمات افزونه Syntax Highlighter حذف میشود."
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:252
+msgid "Delete Options"
+msgstr "حذف تنظیمات"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:454
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:469
+msgid "?"
+msgstr "درباره"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:455
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:466
+msgid "copy to clipboard"
+msgstr "کپی به کلیپ‌بورد"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:456
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:467
+msgid "The code is in your clipboard now"
+msgstr "کد در کلیپ‌بورد شما ذخیره شد"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:457
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:464
+msgid "+ expand source"
+msgstr "گسترش منبع"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:458
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:468
+msgid "print"
+msgstr "چاپ"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:459
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:465
+msgid "view plain"
+msgstr "نمایش ساده"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:470
+msgid "Can't find brush for: "
+msgstr "قلمی نمیتواند پیدا کند برای:"
+
+#: F:\Program
+#: Files\AppServ\www\wordpress\wp-content\plugins\syntax-highlighter/syntax_highlighter.php:471
+msgid "Brush wasn't made for html-script option: "
+msgstr "قلم برای اسکریپت اچ‌تی‌ام‌ال شناخته نشده است."
+

@@ -1,0 +1,173 @@
+.home .site-header {
+	margin-bottom: 0;
+}
+.sennza-intro {
+	position: relative;
+	display: inline-block;
+	margin-bottom: rem-calc(75);
+	width: 100%;
+	img {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		max-width: none;
+	}
+	.sennza-intro-wrapper {
+		position: absolute;
+		display: block;
+		width: 100%;
+		text-align: center;
+		top: 20%;
+	}
+	.sennza-intro-content {
+		width: 59%;
+		margin: 0 auto;
+		color: #fff;
+		h1 {
+			font-size: rem-calc(72);
+			letter-spacing: rem-calc(-1.5);
+			padding-bottom: rem-calc(27);
+			color: #fff;
+		}
+		p {
+			padding-bottom: rem-calc(41);
+			font-size: rem-calc(22);
+			line-height: 1.31;
+			letter-spacing: rem-calc(-1);
+		}
+		p:first-child{
+			font-size: rem-calc(26);
+			font-weight: 100;
+		}
+	}
+}
+.home {
+	p {
+		padding-bottom: rem-calc(30);
+	}
+	.content-area {
+		background-color: #602589;
+		padding: rem-calc(64 112);
+	}
+	.entry-content {
+		ol {
+			> li {
+				list-style: none;
+				float: left;
+				color: #fff;
+				&:before {
+					content: "0" counter(li) ". ";
+					color: #78439b;
+					font-size: rem-calc(72);
+					font-family: 'Helvetica Neue Bold', sans-serif;
+					display: block;
+					text-align: left;
+				}
+				strong {
+					font-size: rem-calc(24);
+					font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica",Helvetica,Arial,sans-serif;
+					font-weight: normal;
+					line-height: 1;
+					display: block;
+					min-height: 70px;
+				}
+			}
+		}
+	}
+	a.post-edit-link {
+		color: #fff;
+	}
+}
+.clients {
+	padding: rem-calc(128 0 96);
+	ul {
+		margin-left: 0;
+		li {
+			list-style: none;
+		}
+	}
+	h5 {
+		font-size: rem-calc(32);
+		border-top: 1px solid #d6d6d6;
+		position: relative;
+		padding-bottom: rem-calc(40);
+		span {
+			background-color: #fff;
+			padding-right: rem-calc(25);
+			position: absolute;
+			margin-top: rem-calc(-20);
+		}
+	}
+}
+.testimonials {
+	background-color: #f9f5fb;
+	padding: rem-calc(96 0 64);
+	ul {
+		list-style: none;
+		margin-left: 0;
+		li.row {
+			margin-bottom: rem-calc(20);
+			border-bottom: 1px solid #d6d6d6;
+			margin-bottom: 2.5rem;
+			padding-bottom: 1.25rem;
+		}
+		strong {
+			font-family: "Helvetica Neue Bold", $body-font-family;
+		}
+	}
+	img {
+		@include border-radius(50%);
+		border: 6px solid #fff;
+		max-width: 180px;
+		padding: 0;
+	}
+	h4 {
+		color: #000;
+		padding-bottom: rem-calc(25);
+		margin: 0;
+		font-size: rem-calc(29);
+
+	}
+	.purple {
+		color: #7433a1;
+		font-size: rem-calc(16);
+	}
+	h6 {
+		padding-bottom: rem-calc(75);
+		border-top: 1px solid #d6d6d6;
+		font-size: rem-calc(45);
+		position: relative;
+		span {
+			padding-right: rem-calc(20);
+			display: inline-block;
+			margin-top: rem-calc(-30);
+			background: #f9f5fb;
+			position: absolute;
+		}
+	}
+}
+.map {
+	height: 455px;
+	margin-top: 1px;
+	margin-bottom: rem-calc(48);
+}
+#map img {
+	max-width: none;
+}
+.static-map {
+	width: 100%;
+}
+.gform_widget {
+	.widget-title {
+		line-height: 1.75;
+	}
+	.gform_description p {
+		padding-bottom: rem-calc(30);
+		&:first-child {
+			font-size: rem-calc(24);
+			color: #000;
+			line-height: 1.42;
+		}
+	}
+}

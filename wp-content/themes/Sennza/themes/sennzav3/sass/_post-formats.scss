@@ -1,0 +1,16 @@
+.format-link .entry-title {
+	.genericon {
+		font-size: rem-calc(45);
+		height: rem-calc(45);
+		width: rem-calc(45);
+		vertical-align: middle;
+		color: #535353;
+		padding-left: rem-calc(5);
+	}
+	a {
+		border-bottom: 2px solid #58207e;
+		&:hover {
+			border-bottom: 2px solid #535353;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+@media #{$small-only} {
+	.sennza-intro {
+		img {
+			min-height: 270px;
+			max-height: 270px;
+		}
+	}
+	.sennza-intro .sennza-intro-content {
+		h1 {
+			font-size: rem-calc(33);
+			text-align: center;
+		}
+	}
+	.slider-content {
+		margin: 0 2%;
+		a {
+			margin-top: 0;
+			display: block;
+		}
+		img {
+			margin-bottom: 0;
+		}
+	}
+	.clients {
+		padding-top: rem-calc(60);
+		h5 {
+			font-size: rem-calc(25);
+			border: none;
+			padding-bottom: rem-calc(15);
+			span {
+				position: inherit;
+			}
+		}
+	}
+	.testimonials {
+		padding-top: rem-calc(20);
+		h6 {
+			font-size: rem-calc(25);
+			border: none;
+			padding-bottom: rem-calc(15);
+			span {
+				position: inherit;
+			}
+		}
+	}
+	.home .gform_widget .widget-title {
+		font-size: rem-calc(25);
+		padding-top: rem-calc(15);
+	}
+	.site-footer {
+		padding: rem-calc(20);
+		.socials {
+			width: 100%;
+			text-align: center;
+			padding-bottom: rem-calc(20);
+		}
+		.address {
+			float: left;
+			span {
+				display: block;
+				padding-bottom: rem-calc(20);
+			}
+		}
+	}
+	.page-template-templatesportfolio-page-php .folio-wrap{
+		.type-folio {
+			padding-top: rem-calc(20);
+			padding-bottom: rem-calc(20);
+		}
+	}
+
+	.home .content-area {
+		padding: rem-calc(64 0);
+	}
+}

@@ -1,0 +1,153 @@
+# shareadraft theme pot file.
+# Copyright (C) 2008 Nikolay Bachiyski
+# This file is distributed under the same license as the shareadraft theme package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Share a Draft 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/shareadraft\n"
+"POT-Creation-Date: 2008-05-10 13:44+0300\n"
+"PO-Revision-Date: 2008-05-10 13:18+0100\n"
+"Last-Translator: Georg S. Adamsen <g.s.adamsen-at-gmail.com>\n"
+"Language-Team: Dansk team <g.s.adamsen@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: d:\\wordpress\\plugins\\shareadraft\n"
+
+#: shareadraft.php:76
+#: shareadraft.php:203
+#: shareadraft.php:254
+msgid "Share a Draft"
+msgstr "Giv kladdeadgang"
+
+#: shareadraft.php:97
+msgid "There is no such post!"
+msgstr "Dette indlæg findes ikke!"
+
+#: shareadraft.php:100
+msgid "The post is published!"
+msgstr "Dette indlæg er udgivet!"
+
+#: shareadraft.php:144
+msgid "Your Drafts:"
+msgstr "Dine kladder:"
+
+#: shareadraft.php:149
+msgid "Pending Review:"
+msgstr "Afventer gennemsyn:"
+
+#: shareadraft.php:154
+msgid "Others&#8217; Drafts:"
+msgstr "Andres kladder:"
+
+#: shareadraft.php:186
+#, php-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekund"
+msgstr[1] "%d sekunder"
+
+#: shareadraft.php:187
+#, php-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minut"
+msgstr[1] "%d minutter"
+
+#: shareadraft.php:188
+#, php-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d time"
+msgstr[1] "%d timer"
+
+#: shareadraft.php:189
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dag"
+msgstr[1] "%d dage"
+
+#: shareadraft.php:207
+msgid "Currently shared drafts"
+msgstr "Kladder, som andre har adgang til pt.:"
+
+#: shareadraft.php:211
+msgid "ID"
+msgstr "ID"
+
+#: shareadraft.php:212
+msgid "Title"
+msgstr "Titel"
+
+#: shareadraft.php:213
+msgid "Link"
+msgstr "Link"
+
+#: shareadraft.php:214
+msgid "Expires after"
+msgstr "Udløber efter"
+
+#: shareadraft.php:215
+msgid "Actions"
+msgstr "Handlinger"
+
+#: shareadraft.php:231
+#: shareadraft.php:235
+msgid "Extend"
+msgstr "Forlæng"
+
+#: shareadraft.php:236
+msgid "by"
+msgstr "med"
+
+#: shareadraft.php:238
+msgid "Cancel"
+msgstr "Annullér"
+
+#: shareadraft.php:240
+msgid "Delete"
+msgstr "Slet"
+
+#: shareadraft.php:247
+msgid "No shared drafts!"
+msgstr "Der er ingen indlæg som andre har adgang til!"
+
+#: shareadraft.php:258
+msgid "Choose a draft"
+msgstr "Vælg en kladde"
+
+#: shareadraft.php:279
+msgid "Share it"
+msgstr "Giv adgang"
+
+#: shareadraft.php:280
+msgid "for"
+msgstr "i"
+
+#: shareadraft.php:324
+msgid "seconds"
+msgstr "sekunder"
+
+#: shareadraft.php:325
+msgid "minutes"
+msgstr "minutter"
+
+#: shareadraft.php:326
+msgid "hours"
+msgstr "timer"
+
+#: shareadraft.php:327
+msgid "days"
+msgstr "dage"
+
+#, fuzzy
+#~ msgid "Share a draft"
+#~ msgstr "Giv kladdeadgang"
+

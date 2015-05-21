@@ -1,0 +1,169 @@
+# shareadraft theme pot file.
+# Copyright (C) 2008 Nikolay Bachiyski
+# This file is distributed under the same license as the shareadraft theme package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Share a Draft in italiano\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/shareadraft\n"
+"POT-Creation-Date: 2009-02-05 10:12+0000\n"
+"PO-Revision-Date: 2010-05-31 22:39+0100\n"
+"Last-Translator: Gianni Diurno (aka gidibao) <gidibao[at]gmail[dot]com>\n"
+"Language-Team: Gianni Diurno | gidibao.net <gidibao[at]gmail[dot]com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: d:\\wordpress\\plugins\\shareadraft\n"
+
+#. Plugin Name of an extension
+#: shareadraft.php:77
+#: shareadraft.php:204
+#: shareadraft.php:257
+msgid "Share a Draft"
+msgstr "Share a Draft"
+
+#: shareadraft.php:98
+msgid "There is no such post!"
+msgstr "Nessun articolo disponibile!"
+
+#: shareadraft.php:101
+msgid "The post is published!"
+msgstr "Questo articolo é stato pubblicato!"
+
+#: shareadraft.php:145
+msgid "Your Drafts:"
+msgstr "Le tue bozze:"
+
+#: shareadraft.php:150
+msgid "Pending Review:"
+msgstr "In attesa di revisione:"
+
+#: shareadraft.php:155
+msgid "Others&#8217; Drafts:"
+msgstr "Bozze altrui:"
+
+#: shareadraft.php:187
+#, php-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d secondo"
+msgstr[1] "%d secondi"
+
+#: shareadraft.php:188
+#, php-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuto"
+msgstr[1] "%d minuti"
+
+#: shareadraft.php:189
+#, php-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d ora"
+msgstr[1] "%d ore"
+
+#: shareadraft.php:190
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d giorno"
+msgstr[1] "%d giorni"
+
+#: shareadraft.php:208
+msgid "Currently shared drafts"
+msgstr "Bozze al momento condivise"
+
+#: shareadraft.php:212
+msgid "ID"
+msgstr "ID"
+
+#: shareadraft.php:213
+msgid "Title"
+msgstr "Titolo"
+
+#: shareadraft.php:214
+msgid "Link"
+msgstr "Link"
+
+#: shareadraft.php:215
+msgid "Expires after"
+msgstr "Scadrà dopo"
+
+#: shareadraft.php:216
+msgid "Actions"
+msgstr "Azioni"
+
+#: shareadraft.php:232
+#: shareadraft.php:236
+msgid "Extend"
+msgstr "Estendi"
+
+#: shareadraft.php:237
+msgid "by"
+msgstr "di"
+
+#: shareadraft.php:239
+msgid "Cancel"
+msgstr "Annulla"
+
+#: shareadraft.php:243
+msgid "Delete"
+msgstr "Cancella"
+
+#: shareadraft.php:250
+msgid "No shared drafts!"
+msgstr "Nessuna bozza condivisa!"
+
+#: shareadraft.php:261
+msgid "Choose a draft"
+msgstr "Scegli una bozza"
+
+#: shareadraft.php:282
+msgid "Share it"
+msgstr "Condividila"
+
+#: shareadraft.php:283
+msgid "for"
+msgstr "per"
+
+#: shareadraft.php:327
+msgid "seconds"
+msgstr "secondi"
+
+#: shareadraft.php:328
+msgid "minutes"
+msgstr "minuti"
+
+#: shareadraft.php:329
+msgid "hours"
+msgstr "ore"
+
+#: shareadraft.php:330
+msgid "days"
+msgstr "giorni"
+
+#. Plugin URI of an extension
+msgid "http://wordpress.org/extend/plugins/shareadraft/"
+msgstr "http://wordpress.org/extend/plugins/shareadraft/"
+
+#. Description of an extension
+msgid "Let your friends preview one of your drafts, without giving them permissions to edit posts in your blog."
+msgstr "Fai sì che i tuoi amici possano vedere in anteprima le tue bozze senza la necessità che tu dia loro il permesso di modificare gli articoli del tuo blog."
+
+#. Author of an extension
+msgid "Nikolay Bachiyski"
+msgstr "Nikolay Bachiyski"
+
+#. Author URI of an extension
+msgid "http://nikolay.bg/"
+msgstr "http://nikolay.bg/"
+
+#, fuzzy
+#~ msgid "Share a draft"
+#~ msgstr "Giv kladdeadgang"

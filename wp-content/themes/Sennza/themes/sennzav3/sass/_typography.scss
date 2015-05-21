@@ -1,0 +1,249 @@
+/* This holds our basic typography styles
+ * You're probably wondering where the rest of the magic for styling is aren't you? It's in foundation/_settings.scss
+ * and foundation/components/_type.scss. Neat hun?
+ */
+
+body {
+	font-size: rem-calc(18);
+	-webkit-font-smoothing: antialiased;
+	font-smooth: always;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+kbd,
+code {
+	color: $body-font-color;
+}
+
+.site-main,
+.mceContentBody {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		letter-spacing: -1px;
+	}
+
+	h1 {
+		padding-bottom: rem-calc(5);
+	}
+
+	h2 {
+		padding-bottom: rem-calc(7);
+		color: #7433a1;
+	}
+
+	h3 {
+		padding-bottom: rem-calc(10);
+		color: #000;
+	}
+
+	h4 {
+		padding-bottom: rem-calc(16);
+		color: #000;
+	}
+
+	h5 {
+		color: #58207e;
+	}
+
+	h6 {
+		color: #000;
+	}
+
+	h5,
+	h6 {
+		padding-bottom: rem-calc(17);
+	}
+
+	p {
+		padding-bottom: rem-calc(30);
+		font-size: inherit;
+	}
+
+	a {
+	text-decoration: underline;
+	color: #535353;
+	}
+
+	a:visited {
+		color: $sennza-purple;
+	}
+
+	a:hover,
+	a:focus,
+	a:active {
+		color: $sennza-purple;
+	}
+
+	blockquote {
+		border-left: 5px solid $sennza-purple;
+	}
+
+  	.pull-quote-left,
+	.pull-quote-right,
+	blockquote,
+	blockquote p {
+		font-size: rem-calc(26);
+	}
+
+	blockquote p {
+		padding-bottom: 0;
+		margin-bottom:  rem-calc(26);
+		margin-left:  rem-calc(26);
+	}
+
+	blockquote cite,
+	.pull-quote-left cite,
+	.pull-quote-right cite,
+	{
+		font-style: normal;
+		font-weight: bold;
+		padding-top: rem-calc(26);
+		font-family: "Helvetica Neue Bold", $body-font-family;
+	}
+
+	strong {
+		font-family: 'Helvetica Neue Bold', $body-font-family;
+	}
+
+	em {
+		font-family: 'HelveticaNeueW01-56It692695', 'Helvetica Neue Italic', $body-font-family;
+		font-style: normal;
+	}
+	table {
+		thead th {
+			font-family: "Helvetica Neue Bold", $body-font-family;
+		}
+		th,
+		td {
+			border: 1px solid #ececec;
+		}
+		tr:hover {
+			background-color: #f3ecf3;
+		}
+	}
+	ul,
+	ol {
+		list-style-position: inside;
+		list-style-type: none;
+		font-size: rem-calc(18);
+	}
+
+	ul {
+		margin-left: rem-calc(2);
+		ul {
+			margin-left: rem-calc(5);
+		}
+	}
+
+	ol {
+		margin-left: 0;
+		ol {
+			margin-left: rem-calc(22);
+		}
+	}
+
+	ul,
+	ol {
+		ul,
+		ol {
+			padding-top: rem-calc(9);
+			li:last-child {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	ul li {
+		background: url(images/bullet.png) 0 rem-calc(6) no-repeat;
+		padding: rem-calc( 0 0 9 20);
+	}
+
+	ol {
+		counter-reset: li;
+	}
+	ol > li {
+		position: relative;
+		padding: rem-calc( 0 0 9 0);
+	}
+	ol > li:before {
+		content: counter(li) ". ";
+		counter-increment: li;
+		color: #7926b3;
+		text-align: center;
+		font-weight: bold;
+		&:after {
+			content: ".";
+		}
+	}
+
+	address,
+	pre {
+		line-height: 1.44;
+		margin-bottom: rem-calc(20);
+	}
+
+	pre {
+		white-space: pre;
+		overflow-x: scroll;
+	}
+
+  	.highlight {
+		font-size: rem-calc(24);
+		line-height: rem-calc(28);
+		color: #000;
+	}
+	.statistics-right,
+	.statistics-left {
+		background-color: $light-grey;
+		margin-bottom: rem-calc(50);
+		li {
+			background: none;
+			border-top: 1px solid #fff;
+			font-size: rem-calc(14);
+			padding: rem-calc( 9 0 9 20);
+			&:first-child {
+				border-top: 0;
+				font-size: rem-calc(24);
+				color: #000;
+			}
+		}
+		strong {
+			color: $sennza-purple;
+			font-size: rem-calc(22);
+		}
+		em {
+			font-size: rem-calc(12);
+		}
+	}
+
+  	.pull-quote-left,
+	.pull-quote-right,
+	.statistics-right,
+	.statistics-left {
+		width: rem-calc(240);
+	}
+
+  	.pull-quote-left,
+	.statistics-left {
+	 	float: left;
+		margin-right: rem-calc(55);
+	}
+
+  	.pull-quote-right,
+	.statistics-right {
+	 	float: right;
+		margin-left: rem-calc(55);
+	}
+
+	.purple {
+		color: $sennza-purple;
+	}
+}
+
+.mceContentBody em {
+	font-style: italic;
+}

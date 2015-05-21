@@ -1,0 +1,42 @@
+ul.paging {
+	text-align: center;
+	li {
+		display: inline-block;
+		background: url();
+
+		&.left {
+			padding-left: 0;
+		}
+	}
+	li:before {
+		content: none;
+		margin-right: 0;
+	}
+	.inactive .fa {
+		background-color: #ccc;
+	}
+}
+.wp-pagenavi {
+	text-align: center;
+	a,
+	span {
+		padding: rem-calc(0 5);
+		font-weight: bold;
+	}
+	span {
+		color: #ccc;
+		font-size: rem-calc(18);
+	}
+	.current {
+		color: $primary-color;
+	}
+	a {
+		text-decoration: none;
+		font-size: rem-calc(18);
+	}
+	a:visited {
+		color: #ccc;
+	}
+
+	margin-bottom: rem-calc(25);
+}

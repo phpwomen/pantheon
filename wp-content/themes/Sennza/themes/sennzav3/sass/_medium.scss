@@ -1,0 +1,43 @@
+@media #{$medium-only} {
+	.sennza-intro img {
+		min-height: 600px;
+		max-height: 600px;
+
+	}
+	.sennza-intro .sennza-intro-wrapper {
+		top: 11%;
+	}
+	.sennza-intro .sennza-intro-content {
+		h1 {
+			font-size: rem-calc(44);
+			padding-bottom: rem-calc(20);
+		}
+		p {
+			font-size: rem-calc(20);
+			padding-bottom: rem-calc(15);
+			line-height: 1.5;
+		}
+		.text-center {
+			margin-top: rem-calc(20);
+		}
+	}
+	.slider-content {
+		margin: 0 10%;
+	}
+	.slider-image {
+		margin-top: 20%;
+	}
+	.site-footer {
+		.socials {
+			padding-bottom: rem-calc(20);
+		}
+		.address {
+			clear: both;
+			float: none;
+			span {
+				display: block;
+				padding-bottom: rem-calc(20);
+			}
+		}
+	}
+}

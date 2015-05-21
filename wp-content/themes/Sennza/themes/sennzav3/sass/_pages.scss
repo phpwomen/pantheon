@@ -1,0 +1,20 @@
+.no-header-margin .site-header {
+	margin-bottom: 0;
+}
+.page-template-templatespage-contact-php .static-map {
+	padding-bottom: rem-calc(30);
+}
+.page-template-templatesportfolio-page-php .folio-wrap{
+	&:nth-child(even) {
+		background: #f5f5f5;
+	}
+
+	.type-folio {
+		padding-top: rem-calc(70);
+		padding-bottom: rem-calc(70);
+	}
+
+	&:first-of-type .type-folio {
+		padding-top: rem-calc(40);
+	}
+}

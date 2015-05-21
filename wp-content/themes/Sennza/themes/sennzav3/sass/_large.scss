@@ -1,0 +1,15 @@
+@media #{$large-only} {
+	.sennza-intro .sennza-intro-wrapper {
+		top: 10%;
+	}
+	.sennza-intro .sennza-intro-content {
+		width: 56%;
+		h1 {
+			font-size: rem-calc(45);
+		}
+		p {
+			font-size: rem-calc(23);
+			padding-bottom: rem-calc(25);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.top-bar .name {
+	zoom: 1;
+	width: 163px;
+}
+.top-bar-section li a {
+	padding-right: 22px !important;
+	line-height: 2.5;
+}
+.home .top-bar-section .has-dropdown>a {
+	padding-right: 22px !important;
+}
+.group-blog .top-bar-section .has-dropdown>a:after,
+.group-blog .entry-content ol>li:before,
+.map {
+	display: none;
+}
+.sennza-intro {
+	width: 100%;
+}
+a.more-link {
+	background: url(../images/more.png) top left no-repeat;
+	display: block;
+	margin-top: 20px;
+}

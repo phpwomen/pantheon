@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Share a drarf\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/shareadraft\n"
+"POT-Creation-Date: 2009-02-05 10:12+0000\n"
+"PO-Revision-Date: 2011-06-03 11:30-0500\n"
+"Last-Translator: Nicolas Brisebois-Tétreault <nbtetreault@dgeq.qc.ca>\n"
+"Language-Team: DGEQ <equipeweb@dgeq.qc.ca>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: CANADA\n"
+
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d jour"
+msgstr[1] "%d jours"
+
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d heure"
+msgstr[1] "%d heures"
+
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minute"
+msgstr[1] "%d minutes"
+
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d seconde"
+msgstr[1] "%d secondes"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Choose a draft"
+msgstr "Choisir un brouillon"
+
+msgid "Currently shared drafts"
+msgstr "Brouillons partagés"
+
+msgid "Delete"
+msgstr "Supprimer"
+
+msgid "Expires after"
+msgstr "Expire dans"
+
+msgid "Extend"
+msgstr "Augmenter"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Let your friends preview one of your drafts, without giving them permissions to edit posts in your blog."
+msgstr "Donnez à vos amis la permission de voir vos brouillons, sans leur donner la permission d'étiter les articles de votre blogue."
+
+msgid "Link"
+msgstr "Lien"
+
+msgid "Nikolay Bachiyski"
+msgstr "Nikolay Bachiyski"
+
+msgid "No shared drafts!"
+msgstr "Aucun brouillon partagé!"
+
+msgid "Others&#8217; Drafts:"
+msgstr "Brouillons des autres auteurs :"
+
+msgid "Pending Review:"
+msgstr "En attente de relecture :"
+
+msgid "Share a Draft"
+msgstr "Share a Draft"
+
+msgid "Share it"
+msgstr "Partager le brouillon"
+
+msgid "The post is published!"
+msgstr "Cet article est publié!"
+
+msgid "There is no such post!"
+msgstr "Cet article n'existe pas!"
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "Your Drafts:"
+msgstr "Vos brouillons : "
+
+msgid "by"
+msgstr "par"
+
+msgid "days"
+msgstr "jour(s)"
+
+msgid "for"
+msgstr "pour"
+
+msgid "hours"
+msgstr "heure(s)"
+
+msgid "http://nikolay.bg/"
+msgstr "http://nikolay.bg/"
+
+msgid "http://wordpress.org/extend/plugins/shareadraft/"
+msgstr "http://wordpress.org/extend/plugins/shareadraft/"
+
+msgid "minutes"
+msgstr "minute(s)"
+
+msgid "seconds"
+msgstr "seconde(s)"
+

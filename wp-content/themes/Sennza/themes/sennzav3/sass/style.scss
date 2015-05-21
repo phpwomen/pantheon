@@ -1,0 +1,43 @@
+/*!
+ * Theme Name:  Sennza Version 3
+ * Theme URI:   http://www.sennza.com.au/
+ * Description: Version 3 of the Sennza site
+ * Author:      Bronson Quick
+ * Author URI:  http://www.sennza.com.au/
+ * Version:     1.0
+ * Tags:
+ * Text Domain: sennzaversion3
+ * Domain Path: /languages/
+ *
+ * License:     GPLv2+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+@import "compass",
+	"variables",
+	"mixins",
+	"normalize",
+	"foundation",
+	"accessibility",
+	"clearing",
+	"typography",
+	"alignment",
+	"menu",
+	"front-page",
+	"slider",
+	"blog",
+	"posts",
+	"pages",
+	"post-formats",
+	"media",
+	"navigation",
+	"comments",
+	"widgets",
+	"infinitescroll",
+	"forms",
+	"buttons",
+	"footer",
+	"pagination",
+	"small",
+	"medium",
+	"large";

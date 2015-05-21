@@ -1,0 +1,19 @@
+/*
+Theme Name: Sennza V3
+Description: Used to style the TinyMCE editor.
+*/
+@import "compass",
+	"variables",
+	"mixins",
+	"normalize",
+	"foundation",
+	"accessibility",
+	"clearing",
+	"typography",
+	"alignment";
+
+html .mceContentBody {
+	font-size: 100%;
+	max-width: 960px;
+	padding: rem-calc(20);
+}

@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Share a Draft 0.4\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/shareadraft\n"
+"POT-Creation-Date: 2009-02-05 10:12+0000\n"
+"PO-Revision-Date: 2008-05-10 13:34+0200\n"
+"Last-Translator: \n"
+"Language-Team: Nikolay Bachiyski <nb@nikolay.bg>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: BULGARIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Bookmarks: -1,7,-1,-1,-1,-1,-1,-1,-1,-1\n"
+
+#. Plugin Name of an extension
+#: shareadraft.php:77 shareadraft.php:204 shareadraft.php:257
+msgid "Share a Draft"
+msgstr "Споделяне на чернови"
+
+#: shareadraft.php:98
+msgid "There is no such post!"
+msgstr "Няма такава публикация!"
+
+#: shareadraft.php:101
+msgid "The post is published!"
+msgstr "Публикацията е публична!"
+
+#: shareadraft.php:145
+msgid "Your Drafts:"
+msgstr "Вашите чернови:"
+
+#: shareadraft.php:150
+msgid "Pending Review:"
+msgstr "Очакващи одобрение:"
+
+#: shareadraft.php:155
+msgid "Others&#8217; Drafts:"
+msgstr "Чужди чернови:"
+
+#: shareadraft.php:187
+#, php-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "една секунда"
+msgstr[1] "%d секунди"
+
+#: shareadraft.php:188
+#, php-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "една минута"
+msgstr[1] "%d минути"
+
+#: shareadraft.php:189
+#, php-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "един час"
+msgstr[1] "%d часа"
+
+#: shareadraft.php:190
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "един ден"
+msgstr[1] "%d дена"
+
+#: shareadraft.php:208
+msgid "Currently shared drafts"
+msgstr "Споделени чернови"
+
+#: shareadraft.php:212
+msgid "ID"
+msgstr "Номер"
+
+#: shareadraft.php:213
+msgid "Title"
+msgstr "Заглавие"
+
+#: shareadraft.php:214
+msgid "Link"
+msgstr "Връзка"
+
+#: shareadraft.php:215
+msgid "Expires after"
+msgstr "Връзката изтича след"
+
+#: shareadraft.php:216
+msgid "Actions"
+msgstr "Действия"
+
+#: shareadraft.php:232 shareadraft.php:236
+msgid "Extend"
+msgstr "Удължаване"
+
+#: shareadraft.php:237
+msgid "by"
+msgstr "с"
+
+#: shareadraft.php:239
+msgid "Cancel"
+msgstr "Отказ"
+
+#: shareadraft.php:243
+msgid "Delete"
+msgstr "Изтриване"
+
+#: shareadraft.php:250
+msgid "No shared drafts!"
+msgstr "Няма споделени чернови!"
+
+#: shareadraft.php:261
+msgid "Choose a draft"
+msgstr "Избор на чернова"
+
+#: shareadraft.php:282
+msgid "Share it"
+msgstr "Споделяне"
+
+#: shareadraft.php:283
+msgid "for"
+msgstr "за"
+
+#: shareadraft.php:327
+msgid "seconds"
+msgstr "секунди"
+
+#: shareadraft.php:328
+msgid "minutes"
+msgstr "минути"
+
+#: shareadraft.php:329
+msgid "hours"
+msgstr "часа"
+
+#: shareadraft.php:330
+msgid "days"
+msgstr "дни"
+
+#. Plugin URI of an extension
+msgid "http://wordpress.org/extend/plugins/shareadraft/"
+msgstr ""
+
+#. Description of an extension
+msgid ""
+"Let your friends preview one of your drafts, without giving them permissions "
+"to edit posts in your blog."
+msgstr "Позволява на приятелите ви да видят някоя ваша чернова, без да им давате да редактират публикации в блога."
+
+#. Author of an extension
+msgid "Nikolay Bachiyski"
+msgstr "Николай Бачийски"
+
+#. Author URI of an extension
+msgid "http://nikolay.bg/"
+msgstr "http://nikolay.bg/"

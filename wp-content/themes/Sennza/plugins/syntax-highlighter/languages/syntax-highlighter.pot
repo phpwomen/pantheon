@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: syntax-highlighter\n"
+"POT-Creation-Date: 2008-10-29 16:36+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# description
+msgid "100% JavaScript syntax highlighter This plugin makes using the <a href=\"http://alexgorbatchev.com/SyntaxHighlighter\">Syntax highlighter</a> to highlight code snippets within WordPress simple. Supports Bash, C++, C#, CSS, Delphi, Java, JavaScript, PHP, Python, Ruby, SQL, VB, VB.NET, XML, and (X)HTML."
+msgstr ""
+
+#: ../syntax_highlighter.php:131
+msgid "+ expand source"
+msgstr ""
+
+#: ../syntax_highlighter.php:132
+msgid "view plain"
+msgstr ""
+
+#: ../syntax_highlighter.php:133
+msgid "copy to clipboard"
+msgstr ""
+
+#: ../syntax_highlighter.php:134
+msgid "The code is in your clipboard now"
+msgstr ""
+
+#: ../syntax_highlighter.php:135
+msgid "print"
+msgstr ""
+
+#: ../syntax_highlighter.php:136
+msgid "?"
+msgstr ""
+
+#: ../syntax_highlighter.php:137
+msgid "Can't find brush for: "
+msgstr ""
+
+#: ../syntax_highlighter.php:138
+msgid "Brush wasn't made for html-script option: "
+msgstr ""
+
+#~ msgid "SyntaxHighlighter\\n\\n"
+#~ msgstr ""
+

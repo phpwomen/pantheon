@@ -1,0 +1,7 @@
+
+/* the font-size mixin */
+
+@mixin font-size( $size ) {
+  font-size: 0px + $size;
+  font-size: 0rem + $size / $doc-font-size;
+}

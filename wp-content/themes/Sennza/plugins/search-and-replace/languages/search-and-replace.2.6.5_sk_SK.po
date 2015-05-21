@@ -1,0 +1,444 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Search & Replace v2.6.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-11 17:38+0100\n"
+"PO-Revision-Date: 2012-12-03 14:57+0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Last-Translator: Branco Radenovich <br.radenovich@gmail.com>\n"
+"Language-Team: Web Geeks\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: d:/wordpress/plugins/search-and-replace\n"
+"X-Textdomain-Support: yes\n"
+"Language: sk_SK\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: d:/wordpress/plugins/search-and-replace\n"
+
+# @ default
+#: search-and-replace.php:86
+msgid "Settings"
+msgstr "Nastavenia"
+
+# @ searchandreplace
+#. translators: plugin header field 'Name'
+#: search-and-replace.php:0 search-and-replace.php:102
+#: search-and-replace.php:792
+msgid "Search & Replace"
+msgstr "Nájsť a nahradiť"
+
+# @ searchandreplace
+#: search-and-replace.php:151
+msgid "Nothing (Checkbox) selected to modify!"
+msgstr "Nič (Checkbox) vybrané upraviť!"
+
+# @ searchandreplace
+#: search-and-replace.php:174
+msgid "Looking @ post content"
+msgstr "Hľadáte @ post obsah"
+
+# @ searchandreplace
+#: search-and-replace.php:188
+msgid "Looking @ ID"
+msgstr "Hľadáte @ ID"
+
+# @ searchandreplace
+#: search-and-replace.php:226
+msgid "Looking @ GUID"
+msgstr "Hľadáte @ GUID"
+
+# @ searchandreplace
+#: search-and-replace.php:240
+msgid "Looking @ Titeln"
+msgstr "Hľadáte @ Titeln"
+
+# @ searchandreplace
+#: search-and-replace.php:260
+msgid "Looking @ post excerpts"
+msgstr "Hľadáte @ post výňatky"
+
+# @ searchandreplace
+#: search-and-replace.php:274
+msgid "Looking @ Meta Daten"
+msgstr "Hľadáte @ Meta Daten"
+
+# @ searchandreplace
+#: search-and-replace.php:288
+msgid "Looking @ modifying comments text"
+msgstr "Hľadáte @ mení text poznámky"
+
+# @ searchandreplace
+#: search-and-replace.php:302
+msgid "Looking @ modifying comments author"
+msgstr "Hľadáte @ úpravou komentáre autora"
+
+# @ searchandreplace
+#: search-and-replace.php:316
+msgid "Looking @ modifying comments author e-mail"
+msgstr "Hľadáte @ úpravou komentáre autora e-mail"
+
+# @ searchandreplace
+#: search-and-replace.php:330
+msgid "Looking @ modifying comments author URLs"
+msgstr "Hľadáte @ úpravou komentáre autora adresy URL"
+
+# @ searchandreplace
+#: search-and-replace.php:344
+msgid "Looking @ Comment-Count"
+msgstr "Hľadáte @ komentár-počítať"
+
+# @ searchandreplace
+#: search-and-replace.php:358
+msgid "Looking @ category description"
+msgstr "Hľadáte @ popis kategórie"
+
+# @ searchandreplace
+#: search-and-replace.php:372
+msgid "Looking @ Tags"
+msgstr "Hľadáte @ Tagy"
+
+# @ searchandreplace
+#: search-and-replace.php:392
+msgid "Looking @ User-ID"
+msgstr "Hľadáte @ ID užívateľa"
+
+# @ searchandreplace
+#: search-and-replace.php:424
+msgid "Looking @ User Login"
+msgstr "Hľadáte @ User Login"
+
+# @ searchandreplace
+#: search-and-replace.php:482
+msgid "The inquiry could not be implemented:"
+msgstr "Vyšetrovanie by nebolo možné realizovať:"
+
+# @ searchandreplace
+#: search-and-replace.php:495
+msgid "entries found."
+msgstr "nájdených položiek."
+
+# @ searchandreplace
+#: search-and-replace.php:736
+msgid "You must specify some text to replace!"
+msgstr "Musíte zadať nejaký text nahradiť!"
+
+# @ searchandreplace
+#: search-and-replace.php:739
+msgid "Attempting to perform search and replace ..."
+msgstr "Pokus vykonať hľadať a nahradiť..."
+
+# @ searchandreplace
+#: search-and-replace.php:740
+msgid "Search"
+msgstr "Hľadať"
+
+# @ searchandreplace
+#: search-and-replace.php:742
+msgid "and replace with"
+msgstr "a nahradiť"
+
+# @ searchandreplace
+#: search-and-replace.php:776
+msgid "Completed successfully!"
+msgstr "Úspešne dokončená!"
+
+# @ searchandreplace
+#: search-and-replace.php:803
+msgid "You do not have sufficient permissions to edit plugins for this blog."
+msgstr "Nemáte dostatočné povolenia na úpravu pluginy pre tento blog."
+
+# @ searchandreplace
+#: search-and-replace.php:809
+msgid "Information Search & Replace"
+msgstr "Informácie nájsť a nahradiť"
+
+# @ searchandreplace
+#: search-and-replace.php:812
+msgid ""
+"Text search is case sensitive and has no pattern matching capabilites. This "
+"replace function matchs raw text so it can be used to replace HTML tags too."
+msgstr ""
+"Textové vyhľadávanie písmená a nemá žiadne capabilites vzorov. Tento "
+"nahradiť funkciu zápalky surového textu, takže môže byť použitý na "
+"nahradenie HTML Tagy príliš."
+
+# @ searchandreplace
+#: search-and-replace.php:849
+msgid "Search in"
+msgstr "Hľadať v"
+
+# @ searchandreplace
+#: search-and-replace.php:856
+msgid "Content"
+msgstr "Obsah"
+
+# @ searchandreplace
+#: search-and-replace.php:820 search-and-replace.php:830
+#: search-and-replace.php:858 search-and-replace.php:863
+#: search-and-replace.php:868 search-and-replace.php:873
+#: search-and-replace.php:878 search-and-replace.php:883
+#: search-and-replace.php:888 search-and-replace.php:893
+#: search-and-replace.php:898 search-and-replace.php:903
+#: search-and-replace.php:908 search-and-replace.php:913
+#: search-and-replace.php:918 search-and-replace.php:923
+#: search-and-replace.php:929 search-and-replace.php:936
+msgid "field:"
+msgstr "pole:"
+
+# @ searchandreplace
+#: search-and-replace.php:858 search-and-replace.php:863
+#: search-and-replace.php:868 search-and-replace.php:873
+#: search-and-replace.php:878 search-and-replace.php:883
+#: search-and-replace.php:888 search-and-replace.php:893
+#: search-and-replace.php:898 search-and-replace.php:903
+#: search-and-replace.php:908 search-and-replace.php:913
+#: search-and-replace.php:918 search-and-replace.php:929
+#: search-and-replace.php:936
+msgid "table:"
+msgstr "Tabuľka:"
+
+# @ searchandreplace
+#: search-and-replace.php:861
+msgid "GUID"
+msgstr "IDENTIFIKÁTOR GUID"
+
+# @ searchandreplace
+#: search-and-replace.php:866
+msgid "Titles"
+msgstr "Tituly"
+
+# @ searchandreplace
+#: search-and-replace.php:871
+msgid "Excerpts"
+msgstr "Výňatky"
+
+# @ searchandreplace
+#: search-and-replace.php:876
+msgid "Meta Data"
+msgstr "Meta dáta"
+
+# @ searchandreplace
+#: search-and-replace.php:881
+msgid "Comments content"
+msgstr "Obsah komentárov"
+
+# @ searchandreplace
+#: search-and-replace.php:886
+msgid "Comments author"
+msgstr "Komentáre autora"
+
+# @ searchandreplace
+#: search-and-replace.php:891
+msgid "Comments author e-mail"
+msgstr "Komentáre autor e-mailu"
+
+# @ searchandreplace
+#: search-and-replace.php:896
+msgid "Comments author URL"
+msgstr "Komentár autora adresy URL"
+
+# @ searchandreplace
+#: search-and-replace.php:901
+msgid "Comments-Counter"
+msgstr "Komentáre-Counter"
+
+# @ searchandreplace
+#: search-and-replace.php:906
+msgid "Category description"
+msgstr "Popis kategórie"
+
+# @ searchandreplace
+#: search-and-replace.php:911
+msgid "Tags & Categories"
+msgstr "Tagy & kategórií"
+
+# @ searchandreplace
+#: search-and-replace.php:913 search-and-replace.php:918
+#: search-and-replace.php:923 search-and-replace.php:929
+msgid "and"
+msgstr "a"
+
+# @ searchandreplace
+#: search-and-replace.php:916
+msgid "User-ID"
+msgstr "Identifikácia používateľa"
+
+# @ searchandreplace
+#: search-and-replace.php:921
+msgid "User-login"
+msgstr "Prihlásenie užívateľa"
+
+# @ searchandreplace
+#: search-and-replace.php:927
+msgid "ID"
+msgstr "ID"
+
+# @ searchandreplace
+#: search-and-replace.php:941
+msgid "Checkboxes to assign"
+msgstr "Začiarkavacie políčka na priradenie"
+
+# @ searchandreplace
+#: search-and-replace.php:941
+msgid "all"
+msgstr "všetky"
+
+# @ searchandreplace
+#: search-and-replace.php:941
+msgid "Checkboxes to unmask"
+msgstr "Začiarkavacie políčka na odmaskovat"
+
+# @ searchandreplace
+#: search-and-replace.php:941
+msgid "none"
+msgstr "žiadny"
+
+# @ searchandreplace
+#: search-and-replace.php:839 search-and-replace.php:957
+msgid "Go"
+msgstr "Ísť"
+
+# @ searchandreplace
+#: search-and-replace.php:968
+msgid "Information on the plugin"
+msgstr "Informácie o pluginu"
+
+# @ searchandreplace
+#: search-and-replace.php:978
+msgid ""
+"Further information: Visit the <a href=\"http://bueltge.de/wp-suchen-und-"
+"ersetzen-de-plugin/114/\">plugin homepage</a> for further information or to "
+"grab the latest version of this plugin."
+msgstr ""
+"Ďalšie informácie: Navštívte <a href=\"http://bueltge.de/wp-suchen-und-"
+"ersetzen-de-plugin/114/\"> Úvod plugin</a> pre ďalšie informácie alebo "
+"chytiť najnovšiu verziu tohto pluginu."
+
+# @ searchandreplace
+#. translators: plugin header field 'PluginURI'
+#: search-and-replace.php:0
+msgid "http://bueltge.de/wp-suchen-und-ersetzen-de-plugin/114/"
+msgstr "http://bueltge.de/WP-Suchen-und-ersetzen-de-plugin/114/"
+
+# @ searchandreplace
+#. translators: plugin header field 'Description'
+#: search-and-replace.php:0
+msgid ""
+"A simple search for find strings in your database and replace the string."
+msgstr "Jednoduché hľadanie nájsť reťazcov v databáze a nahradiť reťazec."
+
+# @ searchandreplace
+#. translators: plugin header field 'Author'
+#: search-and-replace.php:0
+msgid "Frank Bültge"
+msgstr "Frank Bültge"
+
+# @ searchandreplace
+#. translators: plugin header field 'AuthorURI'
+#: search-and-replace.php:0
+msgid "http://bueltge.de/"
+msgstr "http://bueltge.de/"
+
+# @ searchandreplace
+#: search-and-replace.php:156
+msgid "Looking @ all"
+msgstr "Hľadáte @ všetky"
+
+# @ searchandreplace
+#: search-and-replace.php:624
+msgid "is not found in this Database"
+msgstr "nie je nájdený v tejto databáze"
+
+# @ searchandreplace
+#: search-and-replace.php:811
+msgid ""
+"This plugin uses an standard SQL query so it modifies your database directly!"
+"<br /><strong>Attention: </strong>You <strong>cannot</strong> undo any "
+"changes made by this plugin. <strong>It is therefore advisable to backup "
+"your database before running this plugin.</strong> No legal claims to the "
+"author of this plugin! <strong>Activate</strong> the plugin <strong>only</"
+"strong>, if you want to use it!"
+msgstr ""
+"Tento plugin používa štandard SQL dotazu tak upraví databázy priamo! < br / "
+"> <strong>pozornosť:</strong> ste, <strong>nemôžete</strong> vrátiť žiadne "
+"zmeny vykonané tento plugin. <strong>Je preto vhodné zálohovať databázu pred "
+"spustením tohto pluginu.</strong> Žiadne zákonné nároky na autora tohto "
+"pluginu! <strong>Aktivovať</strong> plugin <strong>len</strong>, ak chcete "
+"použiť!"
+
+# @ searchandreplace
+#: search-and-replace.php:818
+msgid "All - only search!"
+msgstr "Hľadať iba!"
+
+# @ searchandreplace
+#: search-and-replace.php:824 search-and-replace.php:948
+msgid "Search for"
+msgstr "Hľadanie"
+
+# @ searchandreplace
+#: search-and-replace.php:834 search-and-replace.php:952
+msgid "Replaced with"
+msgstr "Nahradené"
+
+# @ searchandreplace
+#: search-and-replace.php:476
+msgid "... in table"
+msgstr "... v tabuľke"
+
+# @ searchandreplace
+#: search-and-replace.php:813
+msgid ""
+"<strong>Step One:</strong> Use the follow search for a better information "
+"with return the sql-query and tables with the results. The search use alle "
+"fields in all tables! After this you have more informations and you can use "
+"the replace function."
+msgstr ""
+"<strong>Krok prvý:</strong> Následné hľadanie lepších informácií pomocou "
+"návrat sql dotazu a tabuľky s výsledkami. Vyhľadávanie pomocou alle polí vo "
+"všetkých tabuľkách! Po tomto máte viac informácií a môžete použiť funkciu "
+"nahradiť."
+
+# @ searchandreplace
+#: search-and-replace.php:165
+msgid "Looking & Replace @ all"
+msgstr "Hľadáte & nahradiť @ všetky"
+
+# @ searchandreplace
+#: search-and-replace.php:444
+msgid "Looking @ signups"
+msgstr "Hľadáte @ registráciou"
+
+# @ searchandreplace
+#: search-and-replace.php:820 search-and-replace.php:830
+msgid "tables:"
+msgstr "tabuľky:"
+
+# @ searchandreplace
+#: search-and-replace.php:934
+msgid "Signups"
+msgstr "Registráciou"
+
+# @ searchandreplace
+#. translators: plugin header field 'Version'
+#: search-and-replace.php:0
+msgid "2.6.4"
+msgstr "2.6.4"
+
+# @ searchandreplace
+#: search-and-replace.php:828
+msgid "All - search/replace!"
+msgstr "All - hľadať/nahradiť!"
+
+# @ searchandreplace
+#: search-and-replace.php:978
+msgid ""
+"You want to thank me? Visit my <a href=\"http://bueltge.de/wunschliste"
+"\">wishlist</a> or use the donate button."
+msgstr ""
+"Ak chcete mi poďakovať? Navštívte mojej<a href=\"http://bueltge.de/"
+"wunschliste\"> želanie</a> alebo použite tlačidlo donate."

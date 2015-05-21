@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms version="1.8.1">
+	<form labelPlacement="top_label" useCurrentUserAsAuthor="1">
+		<title><![CDATA[Contact Form 2014]]></title>
+		<button type="text">
+			<text><![CDATA[Enquire Now]]></text>
+		</button>
+		<fields>
+			<field id="8" size="medium" type="name">
+				<adminLabel><![CDATA[name]]></adminLabel>
+				<label><![CDATA[Your Full Name]]></label>
+				<inputs>
+					<input id="8.3">
+						<label><![CDATA[First]]></label>
+					</input>
+					<input id="8.6">
+						<label><![CDATA[Last]]></label>
+					</input>
+				</inputs>
+			</field>
+			<field id="4" isRequired="1" size="medium" type="text">
+				<adminLabel><![CDATA[company]]></adminLabel>
+				<cssClass><![CDATA[gf_left_half]]></cssClass>
+				<label><![CDATA[Company]]></label>
+			</field>
+			<field id="2" isRequired="1" size="medium" type="email">
+				<adminLabel><![CDATA[email]]></adminLabel>
+				<cssClass><![CDATA[gf_right_half]]></cssClass>
+				<label><![CDATA[Email]]></label>
+			</field>
+			<field id="3" isRequired="1" size="medium" type="text">
+				<adminLabel><![CDATA[phone]]></adminLabel>
+				<cssClass><![CDATA[gf_left_half]]></cssClass>
+				<label><![CDATA[Your Phone]]></label>
+			</field>
+			<field id="6" size="medium" type="select">
+				<cssClass><![CDATA[gf_right_half]]></cssClass>
+				<label><![CDATA[Your Budget?]]></label>
+				<choices>
+					<choice>
+						<text><![CDATA[Select:]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[5 - 10k]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[10 - 20k]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[20 - 50k]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[50k +]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Unsure]]></text>
+					</choice>
+				</choices>
+			</field>
+			<field id="5" isRequired="1" size="medium" type="textarea">
+				<adminLabel><![CDATA[message]]></adminLabel>
+				<label><![CDATA[How can we help you?]]></label>
+			</field>
+			<field id="7" size="medium" type="fileupload">
+				<description><![CDATA[Please upload your RPF or additional documents here to receive a thourough proposal.]]></description>
+				<label><![CDATA[Attachments]]></label>
+				<multipleFiles><![CDATA[1]]></multipleFiles>
+			</field>
+		</fields>
+		<descriptionPlacement><![CDATA[below]]></descriptionPlacement>
+		<enableHoneypot><![CDATA[1]]></enableHoneypot>
+		<enableHighrise><![CDATA[1]]></enableHighrise>
+		<description><![CDATA[<h2>Let’s start your project!</h2>
+
+As you can see head office is based in Brisbane, Australia, however we work with clients from around the world including Chicago, London and Papua New Guinea. Geographic location and time zones aren’t an issue due to our refined design and development workflow coupled alongside todays digital environment. Fill out your details below and we’ll contact you to talk about your project! ]]></description>
+		<gpollDisplayResults><![CDATA[1]]></gpollDisplayResults>
+		<gpollShowResultsLink><![CDATA[1]]></gpollShowResultsLink>
+		<gpollShowPercentages><![CDATA[1]]></gpollShowPercentages>
+		<gpollShowCounts><![CDATA[1]]></gpollShowCounts>
+		<gpollStyle><![CDATA[green]]></gpollStyle>
+		<gpollCookie><![CDATA[1 month]]></gpollCookie>
+		<confirmations>
+			<confirmation type="page" id="51773b69db310" isDefault="1">
+				<pageId><![CDATA[13]]></pageId>
+				<name><![CDATA[Default Confirmation]]></name>
+			</confirmation>
+		</confirmations>
+		<notifications>
+			<notification id="51773b69dc2ad">
+				<to><![CDATA[lachlan@sennza.com.au, bronson@sennza.com.au]]></to>
+				<subject><![CDATA[Sennza enquiry from {form_title} ]]></subject>
+				<message><![CDATA[{all_fields}
+
+&nbsp;
+
+{infogeniuz_all}]]></message>
+				<fromField><![CDATA[2]]></fromField>
+				<fromName><![CDATA[{name:1}]]></fromName>
+				<replyTo><![CDATA[{Email:2}]]></replyTo>
+				<toType><![CDATA[email]]></toType>
+				<event><![CDATA[form_submission]]></event>
+				<name><![CDATA[Admin Notification]]></name>
+				<type><![CDATA[admin]]></type>
+			</notification>
+			<notification id="51773b69dd244">
+				<toField><![CDATA[2]]></toField>
+				<fromName><![CDATA[Lachlan MacPherson]]></fromName>
+				<from><![CDATA[lachlan@sennza.com.au]]></from>
+				<subject><![CDATA[Thank you for contacting Sennza]]></subject>
+				<message><![CDATA[Hi {Your Full Name:1},
+
+Thank you for contacting us!
+<div>Sennza is closed from 20th Dec and will open again on 6th Jan.</div>
+We will reply to your email once we are back in Jan.
+
+&nbsp;
+
+Regards,
+The Sennza Team
+07 3040 1545
+sennza.staging.wpengine.com
+
+&nbsp;
+
+PS - For reference there is a copy of your message below:
+
+---
+
+{name:1}
+
+{company:4}
+
+{email:2}
+
+{phone:3}
+
+{What can we do for you?:5}]]></message>
+				<toType><![CDATA[field]]></toType>
+				<to><![CDATA[2]]></to>
+				<event><![CDATA[form_submission]]></event>
+				<name><![CDATA[User Notification]]></name>
+				<type><![CDATA[user]]></type>
+			</notification>
+		</notifications>
+	</form>
+</forms>

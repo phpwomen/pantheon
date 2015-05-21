@@ -1,0 +1,10 @@
+/* Base font size for Rems with pixel fallback See: _mixins.scss */
+$doc-font-size: 16;
+
+$sennza-purple: #58207e;
+$sennza-dark-purple: darken( $sennza-purple, 10% );
+$sennza-light-purple: #8737ad;
+$sennza-lightest-purple: #8f51ac;
+$sennza-button-hover: #945bba;
+
+$light-grey: #f3f3f3;

@@ -1,0 +1,35 @@
+/* =Navigation
+----------------------------------------------- */
+.navigation {
+	padding-bottom: rem-calc(40);
+}
+[class*="navigation"] .nav-previous,
+[class*="navigation"] [rel="prev"] {
+	float: left;
+	width: 50%;
+}
+[class*="navigation"] .nav-next,
+[class*="navigation"] [rel="next"] {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+[class*="navigation"] {
+	[class*="page-"] {
+		color: #000;
+		text-decoration: none;
+		&:hover {
+			color: $sennza-purple;
+			text-decoration: underline;
+		}
+	}
+	.page-left {
+		padding-left: rem-calc(25);
+		background: url(images/page-left.png) 0 2% no-repeat;
+	}
+	.page-right {
+		padding-right: rem-calc(25);
+		background: url(images/page-right.png) 100% 2% no-repeat;
+	}
+}

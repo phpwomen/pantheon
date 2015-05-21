@@ -1,0 +1,10 @@
+#adminmenu #menu-posts-slider .wp-menu-image {
+	background: transparent url("../images/icons.png") 0 -51px no-repeat;;
+}
+
+#adminmenu #menu-posts-slider:hover .wp-menu-image {
+	background: transparent url("../images/icons.png") 0 -194px no-repeat;
+}
+#icon-edit.icon32-posts-slider {
+	background: transparent url("../images/icons.png") 0 5px no-repeat;
+}
