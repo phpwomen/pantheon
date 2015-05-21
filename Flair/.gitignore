@@ -1,0 +1,10 @@
+*.DS_Store
+/css/*
+/bower_components/*
+/node_modules/*
+/releases/*
+/assets/js/foundation/*
+/assets/js/foundation.min.js
+/assets/js/modernizr.js
+/assets/css/editor-style.css
+/assets/css/style.css
